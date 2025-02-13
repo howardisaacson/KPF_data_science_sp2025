@@ -1,0 +1,1216 @@
+keyword,datatype,description,units,source
+WLSL2,bool,QC: L2 WLS file check passed,None,L2 PRIMARY Header
+PTHDAY,float,Last ThAr Daily power meter measurement,Watts,L0 PRIMARY Header
+PTHAU,float,Last ThAr Gold power meter measurement,Watts,L0 PRIMARY Header
+PUDAY,float,Last UNe Daily power meter measurement,Watts,L0 PRIMARY Header
+PUAU,float,Last UNe Gold power meter measurement,Watts,L0 PRIMARY Header
+PLFC,float,Last LFC power meter measurement,Watts,L0 PRIMARY Header
+PETAL,float,Last Etalon power meter measurement,Watts,L0 PRIMARY Header
+PBRB,float,Last Broadband power meter measurement,Watts,L0 PRIMARY Header
+PSOL,float,Last SoCal-CalFib power meter measurement,Watts,L0 PRIMARY Header
+PTHDAYT,string,Time of last ThAr Daily power measurement,None,L0 PRIMARY Header
+PTHAUT,string,Time of last ThAr Gold power measurement,None,L0 PRIMARY Header
+PUDAYT,string,Time of last UNe Daily power measurement,None,L0 PRIMARY Header
+PUAUT,string,Time of last UNe Gold power measurement,None,L0 PRIMARY Header
+PLFCT,string,Time of last LFC power measurement,None,L0 PRIMARY Header
+PETALT,string,Time of last Etalon power measurement,None,L0 PRIMARY Header
+PBRBT,string,Time of last Broadband power measurement,None,L0 PRIMARY Header
+PSOLT,string,Time of last SoCal-CalFib power measurement,None,L0 PRIMARY Header
+TIMEERR,string,NTP time server response,None,L0 PRIMARY Header
+VIGNETTE,bool,Dome vignetting,None,L0 PRIMARY Header
+STVIGNE,bool,Top shutter vignetting,None,L0 PRIMARY Header
+SBVIGNE,bool,Bottom shutter vignetting,None,L0 PRIMARY Header
+SBELEV,float,Bottom shutter elevation,deg,L0 PRIMARY Header
+STELEV,float,Top shutter elevation,deg,L0 PRIMARY Header
+BJDSTD,float,Weighted stddev (over orders) of BJD times,m/s    ,L2 PRIMARY Header
+BJDRNG,float,Range(BJD) for non-zero-weight spectral orders,m/s    ,L2 PRIMARY Header
+BCVSTD,float,Weighted stddev (over orders) of BCV,sec,L2 PRIMARY Header
+BCVRNG,float,Range(BCV) for non-zero-weight spectral orders,sec,L2 PRIMARY Header
+datecode,string,"8-digit date code (e.g., 20240101)",None,Derived Keywords
+ObsID,string,"Observation ID (e.g., KP.20240101.12345.67)",None,Derived Keywords
+L0_filename,string,Full path to L0 file,None,Derived Keywords
+D2_filename,string,Full path to 2D file,None,Derived Keywords
+L1_filename,string,Full path to L1 file,None,Derived Keywords
+L2_filename,string,Full path to L2 file,None,Derived Keywords
+L0_header_read_time,string,Last modification of L0 file,None,Derived Keywords
+D2_header_read_time,string,Last modification of 2D file,None,Derived Keywords
+L1_header_read_time,string,Last modification of L1 file,None,Derived Keywords
+L2_header_read_time,string,Last modification of L2 file,None,Derived Keywords
+Source,string,"Source type (e.g., 'Star' or 'Flat')",None,Derived Keywords
+DATE-MID,datetime,Halfway point of the exposure (unweighted),None,L0 PRIMARY Header
+DATE-BEG,datetime,Start of exposure (shutter open time),None,L0 PRIMARY Header
+DATE-END,datetime,End of exposure (shutter close time),None,L0 PRIMARY Header
+GRDATE-B,datetime,Green camera DATE-BEG,None,L0 PRIMARY Header
+GRDATE-E,datetime,Green camera DATE-END,None,L0 PRIMARY Header
+RDDATE-B,datetime,Red camera DATE-BEG,None,L0 PRIMARY Header
+RDDATE-E,datetime,Red camera DATE-END,None,L0 PRIMARY Header
+EMDATE-B,datetime,Exposure meter DATE-BEG,None,L0 PRIMARY Header
+EMDATE-E,datetime,Exposure meter DATE-END,None,L0 PRIMARY Header
+EXPTIME,float,Requested exposure time,sec,L0 PRIMARY Header
+ELAPSED,float,Actual exposure time,sec,L0 PRIMARY Header
+FRAMENO,int,Frame number,None,L0 PRIMARY Header
+PROGNAME,string,Program name,None,L0 PRIMARY Header
+HA,float,Hour angle,hr,L0 PRIMARY Header
+EL,float,Telescope elevation,deg,L0 PRIMARY Header
+AZ,float,Telescope azimuth,deg,L0 PRIMARY Header
+OBJECT,string,Object name,None,L0 PRIMARY Header
+AIRMASS,float,Airmass of target,None,L0 PRIMARY Header
+OCTAGON,string,Calibration octagon source,None,L0 PRIMARY Header
+IMTYPE,string,Image type,None,L0 PRIMARY Header
+FFFB,string,Flat field fiber on (Yes/No),None,L0 PRIMARY Header
+GREEN,string,Green camera found (Yes/No),None,L0 PRIMARY Header
+RED,string,Red camera found (Yes/No),None,L0 PRIMARY Header
+CA_HK,string,Ca HK camera found (Yes/No),None,L0 PRIMARY Header
+EXPMETER,string,Exposure meter camera found (Yes/No),None,L0 PRIMARY Header
+GUIDE,string,Guide camera found (Yes/No),None,L0 PRIMARY Header
+CAL-OBJ,string,Cal fiber source,None,L0 PRIMARY Header
+SKY-OBJ,string,Sky fiber source,None,L0 PRIMARY Header
+SCI-OBJ,string,Science fiber source,None,L0 PRIMARY Header
+AGITSTA,string,Agigator state (Running/Stopped),None,L0 PRIMARY Header
+FIUMODE,string,FIU operating mode - Observing = on-sky,None,L0 PRIMARY Header
+ETAV1C1T,float,Etalon housing temp (Vescent 1 Channel 1),C,L0 PRIMARY Header
+ETAV1C2T,float,Etalon inner side shield temp (Vescent 1 Channel 2),C,L0 PRIMARY Header
+ETAV1C3T,float,Etalon inner bottom lid temp (Vescent 1 Channel 3),C,L0 PRIMARY Header
+ETAV1C4T,float,Etalon outer etalon chamber temp (Vescent 1 Channel 4),C,L0 PRIMARY Header
+ETAV2C3T,float,Etalon inner top lid temp (Vescent 2 Channel 3),C,L0 PRIMARY Header
+WAVEBNS,float,Wavelengths of EM bins (string of four vals),nm,L0 PRIMARY Header
+TOTCNTS,float,Total EM counts in WAVEBINS,counts,L0 PRIMARY Header
+TOTCORR,string,Total EM counts (corrected) in WAVEBINS,counts,L0 PRIMARY Header
+USTHRSH,string,Was exposure meter thresholding used? (Yes/No),None,L0 PRIMARY Header
+THRSHLD,float,Threshold level,counts,L0 PRIMARY Header
+THRSBIN,float,Threshold wavelength,nm,L0 PRIMARY Header
+TARGNAME,string,KPF Target name,None,L0 PRIMARY Header
+DCSNAME,string,DCS Target name - may not make any sense,None,L0 PRIMARY Header
+TARGRA,string,DCS Target RA,hr,L0 PRIMARY Header
+TARGDEC,string,DCS Target Dec,deg,L0 PRIMARY Header
+TARGEPOC,float,DCS Target epoch,None,L0 PRIMARY Header
+TARGEQUI,float,DCS Target equinox,None,L0 PRIMARY Header
+TARGPLAX,float,Target parallax,as,L0 PRIMARY Header
+TARGPMDC,float,Target proper motion dec,as/yr,L0 PRIMARY Header
+TARGPMRA,float,Target proper motion ra,s/yr,L0 PRIMARY Header
+TARGRADV,float,Target radial velocity,km/s,L0 PRIMARY Header
+TARGWAVE,float,Target Wavelength,microns,L0 PRIMARY Header
+TARGFRAM,string,Target frame,None,L0 PRIMARY Header
+FULLTARG,string,Full Target name from kpfconfig,None,L0 PRIMARY Header
+GAIAID,string,GAIA Target name from kpfconfig,None,L0 PRIMARY Header
+2MASSID,string,2MASS Target name from kpfconfig,None,L0 PRIMARY Header
+GAIAMAG,string,GAIA G band magnitude,mag,L0 PRIMARY Header
+2MASSMAG,string,2MASS J band magnitude,mag,L0 PRIMARY Header
+TARGTEFF,float,Target effective temp,K,L0 PRIMARY Header
+RA,string,Right ascension,hr,L0 PRIMARY Header
+DEC,string,Declination,deg,L0 PRIMARY Header
+EQUINOX,float,DCS Equinox,None,L0 PRIMARY Header
+MJD-OBS,float,Modified Julian day of the observation start,days,L0 PRIMARY Header
+BIASFILE,string,Master bias file used (except for bias exposures),None,2D PRIMARY Header
+DARKFILE,string,Master dark file used (except for dark exposures),None,2D PRIMARY Header
+FLATFILE,string,Master flat file used (except for flat exposures),None,2D PRIMARY Header
+BIASDIR,string,Directory for BIASDIR,None,2D PRIMARY Header
+DARKDIR,string,Directory for DARKDIR,None,2D PRIMARY Header
+FLATDIR,string,Directory for FLATDIR,None,2D PRIMARY Header
+DRPTAG,string,Git version number of KPF-Pipeline used,None,2D PRIMARY Header
+DRPHASH,string,Git commit hash version of KPF-Pipeline used,None,2D PRIMARY Header
+RNRED1,float,Read noise for RED_AMP1 (first amp region on Red),e-,2D PRIMARY Header
+RNRED2,float,Read noise for RED_AMP2 (second amp region on Red),e-,2D PRIMARY Header
+RNGREEN1,float,Read noise for GREEN_AMP1 (first amp region on Green),e-,2D PRIMARY Header
+RNGREEN2,float,Read noise for GREEN_AMP2 (second amp region on Green),e-,2D PRIMARY Header
+GREENTRT,float,Green read time,sec,2D PRIMARY Header
+REDTRT,float,Red read time,sec,2D PRIMARY Header
+READSPED,string,Categorization of CCD read speed ('regular' or 'fast'),None,2D PRIMARY Header
+FLXREG1G,float,"Dark curr, Green region 1 = [1690:1990,1690:1990]",e-/hr,2D PRIMARY Header
+FLXREG2G,float,"Dark curr, Green region 2 = [1690:1990,2090:2390]",e-/hr,2D PRIMARY Header
+FLXREG3G,float,"Dark curr, Green region 3 = [2090:2390,1690:1990]",e-/hr,2D PRIMARY Header
+FLXREG4G,float,"Dark curr, Green region 4 = [2090:2390,2090:2390]",e-/hr,2D PRIMARY Header
+FLXREG5G,float,"Dark curr, Green region 5 = [80:380,3080:3380]",e-/hr,2D PRIMARY Header
+FLXREG6G,float,"Dark curr, Green region 6 = [1690:1990,1690:1990]",e-/hr,2D PRIMARY Header
+FLXAMP1G,float,"Dark curr, Green amp region 1 = [3700:4000,700:1000]",e-/hr,2D PRIMARY Header
+FLXAMP2G,float,"Dark curr, Green amp region 2 = [3700:4000,3080:3380]",e-/hr,2D PRIMARY Header
+FLXCOLLG,float,"Dark curr, Green coll-side region = [3700:4000,700:1000]",e-/hr,2D PRIMARY Header
+FLXECHG,float,"Dark curr, Green ech-side region = [3700:4000,700:1000]",e-/hr,2D PRIMARY Header
+FLXREG1R,float,"Dark curr, Red region 1 = [1690:1990,1690:1990]",e-/hr,2D PRIMARY Header
+FLXREG2R,float,"Dark curr, Red region 2 = [1690:1990,2090:2390]",e-/hr,2D PRIMARY Header
+FLXREG3R,float,"Dark curr, Red region 3 = [2090:2390,1690:1990]",e-/hr,2D PRIMARY Header
+FLXREG4R,float,"Dark curr, Red region 4 = [2090:2390,2090:2390]",e-/hr,2D PRIMARY Header
+FLXREG5R,float,"Dark curr, Red region 5 = [80:380,3080:3380]",e-/hr,2D PRIMARY Header
+FLXREG6R,float,"Dark curr, Red region 6 = [1690:1990,1690:1990]",e-/hr,2D PRIMARY Header
+FLXAMP1R,float,"Dark curr, Red amp region 1 = [3700:4000,700:1000]",e-/hr,2D PRIMARY Header
+FLXAMP2R,float,"Dark curr, Red amp region 2 = [3700:4000,3080:3380]",e-/hr,2D PRIMARY Header
+FLXCOLLR,float,"Dark curr, Red coll-side region = [3700:4000,700:1000]",e-/hr,2D PRIMARY Header
+FLXECHR,float,"Dark curr, Red ech-side region = [3700:4000,700:1000]",e-/hr,2D PRIMARY Header
+GDRXRMS,float,x-coordinate RMS guiding error,mas,2D PRIMARY Header
+GDRYRMS,float,y-coordinate RMS guiding error,mas,2D PRIMARY Header
+GDRRRMS,float,r-coordinate RMS guiding error,mas,2D PRIMARY Header
+GDRXBIAS,float,x-coordinate bias guiding error,mas,2D PRIMARY Header
+GDRYBIAS,float,y-coordinate bias guiding error,mas,2D PRIMARY Header
+GDRSEEJZ,float,Seeing in J+Z-band from Moffat func fit,arcsec,2D PRIMARY Header
+GDRSEEV,float,Scaled seeing in V-band from J+Z-band,arcsec,2D PRIMARY Header
+MOONSEP,float,Separation between Moon and target star,deg,2D PRIMARY Header
+SUNALT,float,Altitude of Sun; negative = below horizon,deg,2D PRIMARY Header
+SKYSCIMS,float,SKY/SCI flux ratio in main spect. scaled from EM data,None,2D PRIMARY Header
+EMSCCT48,float,cumulative EM counts [ADU] in SCI in 445-870 nm,counts,2D PRIMARY Header
+EMSCCT45,float,cumulative EM counts [ADU] in SCI in 445-551 nm,counts,2D PRIMARY Header
+EMSCCT56,float,cumulative EM counts [ADU] in SCI in 551-658 nm,counts,2D PRIMARY Header
+EMSCCT67,float,cumulative EM counts [ADU] in SCI in 658-764 nm,counts,2D PRIMARY Header
+EMSCCT78,float,cumulative EM counts [ADU] in SCI in 764-870 nm,counts,2D PRIMARY Header
+EMSKCT48,float,cumulative EM counts [ADU] in SKY in 445-870 nm,counts,2D PRIMARY Header
+EMSKCT45,float,cumulative EM counts [ADU] in SKY in 445-551 nm,counts,2D PRIMARY Header
+EMSKCT56,float,cumulative EM counts [ADU] in SKY in 551-658 nm,counts,2D PRIMARY Header
+EMSKCT67,float,cumulative EM counts [ADU] in SKY in 658-764 nm,counts,2D PRIMARY Header
+EMSKCT78,float,cumulative EM counts [ADU] in SKY in 764-870 nm,counts,2D PRIMARY Header
+KPFERA,string,"The era during which the observation was made, e.g. '2.0'",None,2D PRIMARY Header
+NOTJUNK,bool,Not in the list of junk files check,None,2D PRIMARY Header
+DATAPRL0,bool,QC: L0 data products present with non-zero array sizes,None,2D PRIMARY Header
+DATAPR2D,bool,QC: 2D red and green data present,None,2D PRIMARY Header
+CAHKPR2D,bool,QC: 2D CaHK data present,None,2D PRIMARY Header
+KWRDPRL0,bool,QC: L0 expected keywords present,None,2D PRIMARY Header
+TIMCHKL0,bool,QC: Consistent times in L0 file,None,2D PRIMARY Header
+EMSAT,bool,QC: Exp Meter not saturated,None,2D PRIMARY Header
+EMNEG,bool,QC: Exp Meter not negative flux,None,2D PRIMARY Header
+GOODREAD,bool,QC: Texp not consistent with CCD readout error,None,2D PRIMARY Header
+POS2DSNR,bool,QC: 2D Red/Green data/var^0.5 not significantly negative,None,2D PRIMARY Header
+LOWBIAS,bool,QC: 2D bias flux not low,None,2D PRIMARY Header
+LOWDARK,bool,QC: 2D dark flux not low,None,2D PRIMARY Header
+LFC2DFOK,bool,QC: LFC flux meets threshold of 4000 counts,None,2D PRIMARY Header
+OLDBIAS,bool,QC: Master bias within 5 days of this obs,None,2D PRIMARY Header
+OLDDARK,bool,QC: Master dark within 5 days of this obs,None,2D PRIMARY Header
+OLDFLAT,bool,QC: Master flat within 5 days of this obs,None,2D PRIMARY Header
+SNRSC452,float,SNR of L1 SCI1+SCI2+SCI3 (95th %ile) near 452 nm,None,L1 PRIMARY Header
+SNRSK452,float,SNR of L1 SKY (95th %ile) near 452 nm,None,L1 PRIMARY Header
+SNRCL452,float,SNR of L1 CAL (95th %ile) near 452 nm,None,L1 PRIMARY Header
+SNRSC548,float,SNR of L1 SCI1+SCI2+SCI3 (95th %ile) near 548 nm,None,L1 PRIMARY Header
+SNRSK548,float,SNR of L1 SKY (95th %ile) near 548 nm,None,L1 PRIMARY Header
+SNRCL548,float,SNR of L1 CAL (95th %ile) near 548 nm,None,L1 PRIMARY Header
+SNRSC652,float,SNR of L1 SCI1+SCI2+SCI3 (95th %ile) near 652 nm,None,L1 PRIMARY Header
+SNRSK652,float,SNR of L1 SKY (95th %ile) near 652 nm,None,L1 PRIMARY Header
+SNRCL652,float,SNR of L1 CAL (95th %ile) near 652 nm,None,L1 PRIMARY Header
+SNRSC747,float,SNR of L1 SCI1+SCI2+SCI3 (95th %ile) near 747 nm,None,L1 PRIMARY Header
+SNRSK747,float,SNR of L1 SKY (95th %ile) near 747 nm,None,L1 PRIMARY Header
+SNRCL747,float,SNR of L1 CAL (95th %ile) near 747 nm,None,L1 PRIMARY Header
+SNRSC852,float,SNR of L1 SCI1+SCI2+SCI3 (95th %ile) near 852 nm,None,L1 PRIMARY Header
+SNRSK852,float,SNR of L1 SKY (95th %ile) near 852 nm,None,L1 PRIMARY Header
+SNRCL852,float,SNR of L1 CAL (95th %ile) near 852 nm,None,L1 PRIMARY Header
+FR452652,float,Peak flux ratio between orders (452nm/652nm),None,L1 PRIMARY Header
+FR548652,float,Peak flux ratio between orders (548nm/652nm),None,L1 PRIMARY Header
+FR747652,float,Peak flux ratio between orders (747nm/652nm),None,L1 PRIMARY Header
+FR852652,float,Peak flux ratio between orders (852nm/652nm),None,L1 PRIMARY Header
+FR12M452,float,median(SCI1/SCI2) flux ratio near 452 nm,None,L1 PRIMARY Header
+FR12U452,float,uncertainty on FR12M452,None,L1 PRIMARY Header
+FR32M452,float,median(SCI3/SCI2) flux ratio near 452 nm,None,L1 PRIMARY Header
+FR32U452,float,uncertainty on FR32M452,None,L1 PRIMARY Header
+FRS2M452,float,median(SKY/SCI2) flux ratio near 452 nm,None,L1 PRIMARY Header
+FRS2U452,float,uncertainty on FRS2M452,None,L1 PRIMARY Header
+FRC2M452,float,median(CAL/SCI2) flux ratio near 452 nm,None,L1 PRIMARY Header
+FRC2U452,float,uncertainty on FRC2M452,None,L1 PRIMARY Header
+FR12M548,float,median(SCI1/SCI2) flux ratio near 548 nm,None,L1 PRIMARY Header
+FR12U548,float,uncertainty on FR12M548,None,L1 PRIMARY Header
+FR32M548,float,median(SCI3/SCI2) flux ratio near 548 nm,None,L1 PRIMARY Header
+FR32U548,float,uncertainty on FR32M548,None,L1 PRIMARY Header
+FRS2M548,float,median(SKY/SCI2) flux ratio near 548 nm,None,L1 PRIMARY Header
+FRS2U548,float,uncertainty on FRS2M548,None,L1 PRIMARY Header
+FRC2M548,float,median(CAL/SCI2) flux ratio near 548 nm,None,L1 PRIMARY Header
+FRC2U548,float,uncertainty on FRC2M548,None,L1 PRIMARY Header
+FR12M652,float,median(SCI1/SCI2) flux ratio near 652 nm,None,L1 PRIMARY Header
+FR12U652,float,uncertainty on FR12M652,None,L1 PRIMARY Header
+FR32M652,float,median(SCI3/SCI2) flux ratio near 652 nm,None,L1 PRIMARY Header
+FR32U652,float,uncertainty on FR32M652,None,L1 PRIMARY Header
+FRS2M652,float,median(SKY/SCI2) flux ratio near 652 nm,None,L1 PRIMARY Header
+FRS2U652,float,uncertainty on FRS2M652,None,L1 PRIMARY Header
+FRC2M652,float,median(CAL/SCI2) flux ratio near 652 nm,None,L1 PRIMARY Header
+FRC2U652,float,uncertainty on FRC2M652,None,L1 PRIMARY Header
+FR12M747,float,median(SCI1/SCI2) flux ratio near 747 nm,None,L1 PRIMARY Header
+FR12U747,float,uncertainty on FR12M747,None,L1 PRIMARY Header
+FR32M747,float,median(SCI3/SCI2) flux ratio near 747 nm,None,L1 PRIMARY Header
+FR32U747,float,uncertainty on FR32M747,None,L1 PRIMARY Header
+FRS2M747,float,median(SKY/SCI2) flux ratio near 747 nm,None,L1 PRIMARY Header
+FRS2U747,float,uncertainty on FRS2M747,None,L1 PRIMARY Header
+FRC2M747,float,median(CAL/SCI2) flux ratio near 747 nm,None,L1 PRIMARY Header
+FRC2U747,float,uncertainty on FRC2M747,None,L1 PRIMARY Header
+FR12M852,float,median(SCI1/SCI2) flux ratio near 852 nm,None,L1 PRIMARY Header
+FR12U852,float,uncertainty on FR12M852,None,L1 PRIMARY Header
+FR32M852,float,median(SCI3/SCI2) flux ratio near 852 nm,None,L1 PRIMARY Header
+FR32U852,float,uncertainty on FR32M852,None,L1 PRIMARY Header
+FRS2M852,float,median(SKY/SCI2) flux ratio near 852 nm,None,L1 PRIMARY Header
+FRS2U852,float,uncertainty on FRS2M852,None,L1 PRIMARY Header
+FRC2M852,float,median(CAL/SCI2) flux ratio near 852 nm,None,L1 PRIMARY Header
+FRC2U852,float,uncertainty on FRC2M852,None,L1 PRIMARY Header
+WLSFILE,string,first wavelength interpolation reference,None,L1 PRIMARY Header
+WLSFILE2,string,second wavelength interpolation reference,None,L1 PRIMARY Header
+MONOTWLS,bool,QC: L1 wavelength solution is monotonic,None,L1 PRIMARY Header
+DATAPRL1,bool,QC: L1 red and green data present,None,L1 PRIMARY Header
+CAHKPRL1,bool,QC: CaHK data present in L1 with expected shape,None,L1 PRIMARY Header
+WLSL1,bool,QC: L1 WLS file check passed,None,L1 PRIMARY Header
+LFCSAT,bool,QC: L1 LFC spectrum not saturated,None,L1 PRIMARY Header
+OLDWLS,bool,QC: WLSFILE within 2 days of this obs,None,L1 PRIMARY Header
+OLDWLS2,bool,QC: WLSFILE2 within 2 days of this obs,None,L1 PRIMARY Header
+AGEBIAS,float,BIASFILE age (whole days),None,L1 PRIMARY Header
+AGEDARK,float,DARKFILE age (whole days),None,L1 PRIMARY Header
+AGEFLAT,float,FLATFILE age (whole days),None,L1 PRIMARY Header
+AGEWLS,float,WLSFILE approx age (days),None,L1 PRIMARY Header
+AGEWLS2,float,WLSFILE2 approx age (days),None,L1 PRIMARY Header
+CCFRV,float,Average of CCD1RV and CCD2RV using weights from RV table,km/s,L2 PRIMARY Header
+CCFERV,float,Error on CCFRV,km/s,L2 PRIMARY Header
+CCFRVC,float,Average of CCD1RVC and CCD2RVC using weights from RV table,km/s,L2 PRIMARY Header
+CCFERVC,float,Error on CCFRVC,km/s,L2 PRIMARY Header
+CCFBCV,float,Weighted avg (over orders) of barycentric RVs,km/s,L2 PRIMARY Header
+CCFBJD,float,Weighted avg (over orders) of BJD times,days,L2 PRIMARY Header
+DATAPRL2,bool,QC: L2 data present,None,L2 PRIMARY Header
+TIMCHKL2,bool,QC: Consistent times in L2 file,None,L2 PRIMARY Header
+kpfmet.BENCH_BOTTOM_BETWEEN_CAMERAS,float,Bench bottom between cameras temp (sensor C2),C,L0 TELEMETRY Extension
+kpfmet.BENCH_BOTTOM_COLLIMATOR,float,Bench bottom collimator temp (sensor C3),C,L0 TELEMETRY Extension
+kpfmet.BENCH_BOTTOM_DCUT,float,Bench bottom D-cut temp (sensor C4),C,L0 TELEMETRY Extension
+kpfmet.BENCH_BOTTOM_ECHELLE,float,Bench bottom echelle Cam temp (sensor B),C,L0 TELEMETRY Extension
+kpfmet.BENCH_TOP_BETWEEN_CAMERAS,float,Bench top between cameras temp (sensor D4),C,L0 TELEMETRY Extension
+kpfmet.BENCH_TOP_COLL,float,Bench top collimator temp (sensor D5),C,L0 TELEMETRY Extension
+kpfmet.BENCH_TOP_DCUT,float,Bench top D-cut temp (sensor D3),C,L0 TELEMETRY Extension
+kpfmet.BENCH_TOP_ECHELLE_CAM,float,Bench top echelle Cam temp (sensor D1),C,L0 TELEMETRY Extension
+kpfmet.CALEM_SCMBLR_CHMBR_END,float,Cal EM scrambler chamber end temp (sensor C1),C,L0 TELEMETRY Extension
+kpfmet.CALEM_SCMBLR_FIBER_END,float,Cal EM scrambler fiber end temp (sensor D1),C,L0 TELEMETRY Extension
+kpfmet.CAL_BENCH,float,Cal bench temp,C,L0 TELEMETRY Extension
+kpfmet.CAL_BENCH_BB_SRC,float,Cal bench blackbody source temp,C,L0 TELEMETRY Extension
+kpfmet.CAL_BENCH_BOT,float,Cal bench bottom temp,C,L0 TELEMETRY Extension
+kpfmet.CAL_BENCH_ENCL_AIR,float,Cal bench enclosure air temp,C,L0 TELEMETRY Extension
+kpfmet.CAL_BENCH_OCT_MOT,float,Cal bench octagon motor temp,C,L0 TELEMETRY Extension
+kpfmet.CAL_BENCH_TRANS_STG_MOT,float,Cal bench trans stage motor temp,C,L0 TELEMETRY Extension
+kpfmet.CAL_RACK_TOP,float,Cal rack top temp,C,L0 TELEMETRY Extension
+kpfmet.CHAMBER_EXT_BOTTOM,float,Chamber exterior Bottom temp (sensor B),C,L0 TELEMETRY Extension
+kpfmet.CHAMBER_EXT_TOP,float,Chamber exterior Top temp (sensor C1),,L0 TELEMETRY Extension
+kpfmet.CRYOSTAT_G1,float,Within cryostat green temp (sensor D3),C,L0 TELEMETRY Extension
+kpfmet.CRYOSTAT_G2,float,Within cryostat green temp (sensor D3),C,L0 TELEMETRY Extension
+kpfmet.CRYOSTAT_G3,float,Within cryostat green temp (sensor D4),C,L0 TELEMETRY Extension
+kpfmet.CRYOSTAT_R1,float,Within Cryostat red temp (sensor D2),C,L0 TELEMETRY Extension
+kpfmet.CRYOSTAT_R2,float,Within Cryostat red temp (sensor D3),C,L0 TELEMETRY Extension
+kpfmet.CRYOSTAT_R3,float,Within Cryostat red temp (sensor D4),C,L0 TELEMETRY Extension
+kpfmet.ECHELLE_BOTTOM,float,Echelle Bottom temp (sensor D1),C,L0 TELEMETRY Extension
+kpfmet.ECHELLE_TOP,float,Echelle Top temp (sensor C1),C,L0 TELEMETRY Extension
+kpfmet.FF_SRC,float,Flat field source temp,C,L0 TELEMETRY Extension
+kpfmet.GREEN_CAMERA_BOTTOM,float,Green camera bottom temp (sensor C3),C,L0 TELEMETRY Extension
+kpfmet.GREEN_CAMERA_COLLIMATOR,float,Green camera collimator temp (sensor C4),C,L0 TELEMETRY Extension
+kpfmet.GREEN_CAMERA_ECHELLE,float,Green camera echelle temp (sensor D5),C,L0 TELEMETRY Extension
+kpfmet.GREEN_CAMERA_TOP,float,Green camera Top temp (sensor C2),C,L0 TELEMETRY Extension
+kpfmet.GREEN_GRISM_TOP,float,Green grism Top temp (sensor C5),C,L0 TELEMETRY Extension
+kpfmet.GREEN_LN2_FLANGE,float,Green LN2 Flange temp (sensor A),C,L0 TELEMETRY Extension
+kpfmet.PRIMARY_COLLIMATOR_TOP,float,Primary collimator Top temp (sensor D2),C,L0 TELEMETRY Extension
+kpfmet.RED_CAMERA_BOTTOM,float,Red Camera Bottom temp (sensor D5),C,L0 TELEMETRY Extension
+kpfmet.RED_CAMERA_COLLIMATOR,float,Red camera collimator temp (sensor C3),C,L0 TELEMETRY Extension
+kpfmet.RED_CAMERA_ECHELLE,float,Red camera echelle temp (sensor C4),C,L0 TELEMETRY Extension
+kpfmet.RED_CAMERA_TOP,float,Red camera top temp (sensor C5),C,L0 TELEMETRY Extension
+kpfmet.RED_GRISM_TOP,float,Red grism top temp (sensor C2),C,L0 TELEMETRY Extension
+kpfmet.RED_LN2_FLANGE,float,Red LN2 flange temp (sensor D1),C,L0 TELEMETRY Extension
+kpfmet.REFORMATTER,float,Reformatter temp (sensor A),C,L0 TELEMETRY Extension
+kpfmet.SCIENCE_CAL_FIBER_STG,float,Science Cal fiber stage temp,C,L0 TELEMETRY Extension
+kpfmet.SCISKY_SCMBLR_CHMBR_EN,float,SciSky scrambler chamber end temp (sensor A),C,L0 TELEMETRY Extension
+kpfmet.SCISKY_SCMBLR_FIBER_EN,float,SciSky scrambler fiber end temp (sensor B),C,L0 TELEMETRY Extension
+kpfmet.SIMCAL_FIBER_STG,float,SimCal fiber stage temp,C,L0 TELEMETRY Extension
+kpfmet.SKYCAL_FIBER_STG,float,SkyCal fiber stage temp,C,L0 TELEMETRY Extension
+kpfmet.TEMP,float,Vaisala (Hallway) temp,C,L0 TELEMETRY Extension
+kpfmet.TH_DAILY,float,ThAr Daily lamp temp,C,L0 TELEMETRY Extension
+kpfmet.TH_GOLD,float,ThAr Gold lamp temp,C,L0 TELEMETRY Extension
+kpfmet.U_DAILY,float,UNe Daily lamp temp,C,L0 TELEMETRY Extension
+kpfmet.U_GOLD,float,UNe Gold lamp temp,C,L0 TELEMETRY Extension
+kpfgreen.BPLANE_TEMP,float,Green Archon backplane temp,C,L0 TELEMETRY Extension
+kpfgreen.BRD10_DRVR_T,float,Green Archon board 10 (Driver) temp,C,L0 TELEMETRY Extension
+kpfgreen.BRD11_DRVR_T,float,Green Archon board 11 (Driver) temp,C,L0 TELEMETRY Extension
+kpfgreen.BRD12_LVXBIAS_T,float,Green Archon board 12 (LVxBias) temp,C,L0 TELEMETRY Extension
+kpfgreen.BRD1_HTRX_T,float,Green Archon board 1 (HeaterX) temp,C,L0 TELEMETRY Extension
+kpfgreen.BRD2_XVBIAS_T,float,Green Archon board 2 (XV Bias) temp,C,L0 TELEMETRY Extension
+kpfgreen.BRD3_LVDS_T,float,Green Archon board 3 (LVDS) temp,C,L0 TELEMETRY Extension
+kpfgreen.BRD4_DRVR_T,float,Green Archon board 4 (Driver) temp,C,L0 TELEMETRY Extension
+kpfgreen.BRD5_AD_T,float,Green Archon board 5 (AD) temp,C,L0 TELEMETRY Extension
+kpfgreen.BRD7_HTRX_T,float,Green Archon board 7 (HeaterX) temp,C,L0 TELEMETRY Extension
+kpfgreen.BRD9_HVXBIAS_T,float,Green Archon board 9 (HVxBias) temp,C,L0 TELEMETRY Extension
+kpfgreen.CF_BASE_2WT,float,Green tip cold finger temp (2 wire),C,L0 TELEMETRY Extension
+kpfgreen.CF_BASE_T,float,Green base cold finger temp,C,L0 TELEMETRY Extension
+kpfgreen.CF_BASE_TRG,float,Green base cold finger heater 1A target temp,C,L0 TELEMETRY Extension
+kpfgreen.CF_TIP_T,float,Green tip cold finger temp,C,L0 TELEMETRY Extension
+kpfgreen.CF_TIP_TRG,float,Green tip cold finger heater 1B target temp,C,L0 TELEMETRY Extension
+kpfgreen.COL_PRESS,float,Green collimator ion pump pressure,Torr,L0 TELEMETRY Extension
+kpfgreen.CRYOBODY_T,float,Green cryobody temp,C,L0 TELEMETRY Extension
+kpfgreen.CRYOBODY_TRG,float,Green cryobody heater 7B target temp,C,L0 TELEMETRY Extension
+kpfgreen.CURRTEMP,float,Green cold head temp,C,L0 TELEMETRY Extension
+kpfgreen.ECH_PRESS,float,Green echelle ion pump pressure,Torr,L0 TELEMETRY Extension
+kpfgreen.KPF_CCD_T,float,SSL temp sensor on Green CCD,C,L0 TELEMETRY Extension
+kpfgreen.STA_CCD_T,float,STA temp sensor on Green CCD,C,L0 TELEMETRY Extension
+kpfgreen.STA_CCD_TRG,float,Green CCD heater 7A target temp,C,L0 TELEMETRY Extension
+kpfgreen.TEMPSET,float,Green set point for the cold head temp,C,L0 TELEMETRY Extension
+kpfred.BPLANE_TEMP,float,Red Archon backplane temp,C,L0 TELEMETRY Extension
+kpfred.BRD10_DRVR_T,float,Red Archon board 10 (Driver) temp,C,L0 TELEMETRY Extension
+kpfred.BRD11_DRVR_T,float,Red Archon board 11 (Driver) temp,C,L0 TELEMETRY Extension
+kpfred.BRD12_LVXBIAS_T,float,Red Archon board 12 (LVxBias) temp,C,L0 TELEMETRY Extension
+kpfred.BRD1_HTRX_T,float,Red Archon board 1 (HeaterX) temp,C,L0 TELEMETRY Extension
+kpfred.BRD2_XVBIAS_T,float,Red Archon board 2 (XV Bias) temp,C,L0 TELEMETRY Extension
+kpfred.BRD3_LVDS_T,float,Red Archon board 3 (LVDS) temp,C,L0 TELEMETRY Extension
+kpfred.BRD4_DRVR_T,float,Red Archon board 4 (Driver) temp,C,L0 TELEMETRY Extension
+kpfred.BRD5_AD_T,float,Red Archon board 5 (AD) temp,C,L0 TELEMETRY Extension
+kpfred.BRD7_HTRX_T,float,Red board Archon 7 (HeaterX) temp,C,L0 TELEMETRY Extension
+kpfred.BRD9_HVXBIAS_T,float,Red board Archon 9 (HVxBias) temp,C,L0 TELEMETRY Extension
+kpfred.CF_BASE_2WT,float,Red tip cold finger temp (2 wire),C,L0 TELEMETRY Extension
+kpfred.CF_BASE_T,float,Red base cold finger temp,C,L0 TELEMETRY Extension
+kpfred.CF_BASE_TRG,float,Red base cold finger heater 1A target temp,C,L0 TELEMETRY Extension
+kpfred.CF_TIP_T,float,Red tip cold finger temp,C,L0 TELEMETRY Extension
+kpfred.CF_TIP_TRG,float,Red tip cold finger heater 1B target temp,C,L0 TELEMETRY Extension
+kpfred.COL_PRESS,float,Red Collimator ion pump pressure,Torr,L0 TELEMETRY Extension
+kpfred.CRYOBODY_T,float,Red Cryo Body temp,C,L0 TELEMETRY Extension
+kpfred.CRYOBODY_TRG,float,Red Cryo body heater 7B target temp,C,L0 TELEMETRY Extension
+kpfred.CURRTEMP,float,Red cold head temp,C,L0 TELEMETRY Extension
+kpfred.ECH_PRESS,float,Red ion pump pressure,Torr,L0 TELEMETRY Extension
+kpfred.KPF_CCD_T,float,SSL temp sensor on Red CCD,C,L0 TELEMETRY Extension
+kpfred.STA_CCD_T,float,STA temp sensor on Red CCD,C,L0 TELEMETRY Extension
+kpfred.STA_CCD_TRG,float,Red CCD heater 7A target temp,C,L0 TELEMETRY Extension
+kpfred.TEMPSET,float,Set point for the Red cold head temp,C,L0 TELEMETRY Extension
+kpfexpose.BENCH_C,float,HK Bench temp,C,L0 TELEMETRY Extension
+kpfexpose.CAMBARREL_C,float,HK Camera barrel temp,C,L0 TELEMETRY Extension
+kpfexpose.DET_XTRN_C,float,HK Detector external temp,C,L0 TELEMETRY Extension
+kpfexpose.ECHELLE_C,float,HK Echelle temp,C,L0 TELEMETRY Extension
+kpfexpose.ENCLOSURE_C,float,HK Enclosure temp,C,L0 TELEMETRY Extension
+kpfexpose.RACK_AIR_C,float,HK Rack air temp,C,L0 TELEMETRY Extension
+kpfvac.PUMP_TEMP,float,Vacuum motor temp,C,L0 TELEMETRY Extension
+kpf_hk.COOLTARG,float,HK target temp,C,L0 TELEMETRY Extension
+kpf_hk.CURRTEMP,float,HK current temp,C,L0 TELEMETRY Extension
+kpfgreen.COL_CURR,float,Green Collimator Ion pump current,A,L0 TELEMETRY Extension
+kpfgreen.ECH_CURR,float,Green Echelle Ion pump current,A,L0 TELEMETRY Extension
+kpfred.COL_CURR,float,Red Collimator Ion pump current,A,L0 TELEMETRY Extension
+kpfred.ECH_CURR,float,Red Echelle Ion pump current,A,L0 TELEMETRY Extension
+kpfcal.IRFLUX,float,LFC Fiberlock IR Intensity,counts,L0 TELEMETRY Extension
+kpfcal.VISFLUX,float,LFC Fiberlock Vis Intensity,counts,L0 TELEMETRY Extension
+kpfcal.BLUECUTIACT,float,Blue cut amplifier 0 current,A,L0 TELEMETRY Extension
+kpfmot.AGITSPD,float,Agitator motor raw velocity,counts/s,L0 TELEMETRY Extension
+kpfmot.AGITTOR,float,Agitator motor torque,V,L0 TELEMETRY Extension
+kpfmot.AGITAMBI_T,float,Agitator ambient temp,C,L0 TELEMETRY Extension
+kpfmot.AGITMOT_T,float,Agitator motor temp,C,L0 TELEMETRY Extension
+kpfpower.OUTLET_A1_Amps,float,Agitator motor current (Outlet A1),mA,L0 TELEMETRY Extension
+CCD1ROW,float,Row number in RV table of bluest order on Green CCD,None,L2 RV Header
+CCD1RV1,float,RV of SCI1 (all Green orders); bcvel corrected,km/s,L2 RV Header
+CCD1ERV1,float,Error on CCD1RV1,km/s,L2 RV Header
+CCD1RV2,float,RV of SCI2 (all Green orders); bcvel corrected,km/s,L2 RV Header
+CCD1ERV2,float,Error on CCD1RV2,km/s,L2 RV Header
+CCD1RV3,float,RV of SCI3 (all Green orders); bcvel corrected,km/s,L2 RV Header
+CCD1ERV3,float,Error on CCD1RV3,km/s,L2 RV Header
+CCD1RVC,float,RV of CAL (all Green orders); bcvel corrected,km/s,L2 RV Header
+CCD1ERV,float,Error on CCD1RVC,km/s,L2 RV Header
+CCD1RVS,float,RV of SKY (all Green orders); bcvel corrected,km/s,L2 RV Header
+CCD1ERVS,float,Error on CCD1RVS,km/s,L2 RV Header
+CCD1RV,float,"RV of avg(SCI1/SCI2/SCI3), all Green orders; bcvel corr'd",km/s,L2 RV Header
+CCD1BJD,float,Photon-weighted mid-time (BJD) for CCD1RV,days,L2 RV Header
+CCD2ROW,float,Row number in RV table of bluest order on Red CCD,km/s,L2 RV Header
+CCD2RV1,float,RV of SCI1 (all Red orders); bcvel corrected,km/s,L2 RV Header
+CCD2ERV1,float,Error on CCD2RV1,km/s,L2 RV Header
+CCD2RV2,float,RV of SCI2 (all Red orders); bcvel corrected,km/s,L2 RV Header
+CCD2ERV2,float,Error on CCD2RV2,km/s,L2 RV Header
+CCD2RV3,float,RV of SCI3 (all Red orders); bcvel corrected,km/s,L2 RV Header
+CCD2ERV3,float,Error on CCD2RV3,km/s,L2 RV Header
+CCD2RVC,float,RV of CAL (all Red orders); bcvel corrected,km/s,L2 RV Header
+CCD2ERVC,float,Error on CCD2RVC,km/s,L2 RV Header
+CCD2RVS,float,RV of SKY (all Red orders); bcvel corrected,km/s,L2 RV Header
+CCD2ERVS,float,Error on CCD2RVS,km/s,L2 RV Header
+CCD2RV,float,"RV of avg(SCI1/SCI2/SCI3), all Red orders; bcvel corr'd",km/s,L2 RV Header
+CCD2ERV,float,Error on CCD2RV,km/s,L2 RV Header
+CCD2BJD,float,Photon-weighted mid-time (BJD) for CCD2RV,days,L2 RV Header
+SCI_MASK,string,Mask name for SCI,None,L2 CCF Header
+SCIMPATH,string,Mask path for SCI,None,L2 CCF Header
+CAL_MASK,string,Mask name for CAL,None,L2 CCF Header
+CALMPATH,string,Mask path for CAL,None,L2 CCF Header
+SKY_MASK,string,Mask name for SKY,None,L2 CCF Header
+SKYMPATH,string,Mask path for SKY,None,L2 CCF Header
+RV100,REAL,RV for SCI1 order 00,km/s,L2 RV Extension
+RV101,REAL,RV for SCI1 order 01,km/s,L2 RV Extension
+RV102,REAL,RV for SCI1 order 02,km/s,L2 RV Extension
+RV103,REAL,RV for SCI1 order 03,km/s,L2 RV Extension
+RV104,REAL,RV for SCI1 order 04,km/s,L2 RV Extension
+RV105,REAL,RV for SCI1 order 05,km/s,L2 RV Extension
+RV106,REAL,RV for SCI1 order 06,km/s,L2 RV Extension
+RV107,REAL,RV for SCI1 order 07,km/s,L2 RV Extension
+RV108,REAL,RV for SCI1 order 08,km/s,L2 RV Extension
+RV109,REAL,RV for SCI1 order 09,km/s,L2 RV Extension
+RV110,REAL,RV for SCI1 order 10,km/s,L2 RV Extension
+RV111,REAL,RV for SCI1 order 11,km/s,L2 RV Extension
+RV112,REAL,RV for SCI1 order 12,km/s,L2 RV Extension
+RV113,REAL,RV for SCI1 order 13,km/s,L2 RV Extension
+RV114,REAL,RV for SCI1 order 14,km/s,L2 RV Extension
+RV115,REAL,RV for SCI1 order 15,km/s,L2 RV Extension
+RV116,REAL,RV for SCI1 order 16,km/s,L2 RV Extension
+RV117,REAL,RV for SCI1 order 17,km/s,L2 RV Extension
+RV118,REAL,RV for SCI1 order 18,km/s,L2 RV Extension
+RV119,REAL,RV for SCI1 order 19,km/s,L2 RV Extension
+RV120,REAL,RV for SCI1 order 20,km/s,L2 RV Extension
+RV121,REAL,RV for SCI1 order 21,km/s,L2 RV Extension
+RV122,REAL,RV for SCI1 order 22,km/s,L2 RV Extension
+RV123,REAL,RV for SCI1 order 23,km/s,L2 RV Extension
+RV124,REAL,RV for SCI1 order 24,km/s,L2 RV Extension
+RV125,REAL,RV for SCI1 order 25,km/s,L2 RV Extension
+RV126,REAL,RV for SCI1 order 26,km/s,L2 RV Extension
+RV127,REAL,RV for SCI1 order 27,km/s,L2 RV Extension
+RV128,REAL,RV for SCI1 order 28,km/s,L2 RV Extension
+RV129,REAL,RV for SCI1 order 29,km/s,L2 RV Extension
+RV130,REAL,RV for SCI1 order 30,km/s,L2 RV Extension
+RV131,REAL,RV for SCI1 order 31,km/s,L2 RV Extension
+RV132,REAL,RV for SCI1 order 32,km/s,L2 RV Extension
+RV133,REAL,RV for SCI1 order 33,km/s,L2 RV Extension
+RV134,REAL,RV for SCI1 order 34,km/s,L2 RV Extension
+RV135,REAL,RV for SCI1 order 35,km/s,L2 RV Extension
+RV136,REAL,RV for SCI1 order 36,km/s,L2 RV Extension
+RV137,REAL,RV for SCI1 order 37,km/s,L2 RV Extension
+RV138,REAL,RV for SCI1 order 38,km/s,L2 RV Extension
+RV139,REAL,RV for SCI1 order 39,km/s,L2 RV Extension
+RV140,REAL,RV for SCI1 order 40,km/s,L2 RV Extension
+RV141,REAL,RV for SCI1 order 41,km/s,L2 RV Extension
+RV142,REAL,RV for SCI1 order 42,km/s,L2 RV Extension
+RV143,REAL,RV for SCI1 order 43,km/s,L2 RV Extension
+RV144,REAL,RV for SCI1 order 44,km/s,L2 RV Extension
+RV145,REAL,RV for SCI1 order 45,km/s,L2 RV Extension
+RV146,REAL,RV for SCI1 order 46,km/s,L2 RV Extension
+RV147,REAL,RV for SCI1 order 47,km/s,L2 RV Extension
+RV148,REAL,RV for SCI1 order 48,km/s,L2 RV Extension
+RV149,REAL,RV for SCI1 order 49,km/s,L2 RV Extension
+RV150,REAL,RV for SCI1 order 50,km/s,L2 RV Extension
+RV151,REAL,RV for SCI1 order 51,km/s,L2 RV Extension
+RV152,REAL,RV for SCI1 order 52,km/s,L2 RV Extension
+RV153,REAL,RV for SCI1 order 53,km/s,L2 RV Extension
+RV154,REAL,RV for SCI1 order 54,km/s,L2 RV Extension
+RV155,REAL,RV for SCI1 order 55,km/s,L2 RV Extension
+RV156,REAL,RV for SCI1 order 56,km/s,L2 RV Extension
+RV157,REAL,RV for SCI1 order 57,km/s,L2 RV Extension
+RV158,REAL,RV for SCI1 order 58,km/s,L2 RV Extension
+RV159,REAL,RV for SCI1 order 59,km/s,L2 RV Extension
+RV160,REAL,RV for SCI1 order 60,km/s,L2 RV Extension
+RV161,REAL,RV for SCI1 order 61,km/s,L2 RV Extension
+RV162,REAL,RV for SCI1 order 62,km/s,L2 RV Extension
+RV163,REAL,RV for SCI1 order 63,km/s,L2 RV Extension
+RV164,REAL,RV for SCI1 order 64,km/s,L2 RV Extension
+RV165,REAL,RV for SCI1 order 65,km/s,L2 RV Extension
+RV166,REAL,RV for SCI1 order 66,km/s,L2 RV Extension
+RV200,REAL,RV for SCI2 order 00,km/s,L2 RV Extension
+RV201,REAL,RV for SCI2 order 01,km/s,L2 RV Extension
+RV202,REAL,RV for SCI2 order 02,km/s,L2 RV Extension
+RV203,REAL,RV for SCI2 order 03,km/s,L2 RV Extension
+RV204,REAL,RV for SCI2 order 04,km/s,L2 RV Extension
+RV205,REAL,RV for SCI2 order 05,km/s,L2 RV Extension
+RV206,REAL,RV for SCI2 order 06,km/s,L2 RV Extension
+RV207,REAL,RV for SCI2 order 07,km/s,L2 RV Extension
+RV208,REAL,RV for SCI2 order 08,km/s,L2 RV Extension
+RV209,REAL,RV for SCI2 order 09,km/s,L2 RV Extension
+RV210,REAL,RV for SCI2 order 10,km/s,L2 RV Extension
+RV211,REAL,RV for SCI2 order 11,km/s,L2 RV Extension
+RV212,REAL,RV for SCI2 order 12,km/s,L2 RV Extension
+RV213,REAL,RV for SCI2 order 13,km/s,L2 RV Extension
+RV214,REAL,RV for SCI2 order 14,km/s,L2 RV Extension
+RV215,REAL,RV for SCI2 order 15,km/s,L2 RV Extension
+RV216,REAL,RV for SCI2 order 16,km/s,L2 RV Extension
+RV217,REAL,RV for SCI2 order 17,km/s,L2 RV Extension
+RV218,REAL,RV for SCI2 order 18,km/s,L2 RV Extension
+RV219,REAL,RV for SCI2 order 19,km/s,L2 RV Extension
+RV220,REAL,RV for SCI2 order 20,km/s,L2 RV Extension
+RV221,REAL,RV for SCI2 order 21,km/s,L2 RV Extension
+RV222,REAL,RV for SCI2 order 22,km/s,L2 RV Extension
+RV223,REAL,RV for SCI2 order 23,km/s,L2 RV Extension
+RV224,REAL,RV for SCI2 order 24,km/s,L2 RV Extension
+RV225,REAL,RV for SCI2 order 25,km/s,L2 RV Extension
+RV226,REAL,RV for SCI2 order 26,km/s,L2 RV Extension
+RV227,REAL,RV for SCI2 order 27,km/s,L2 RV Extension
+RV228,REAL,RV for SCI2 order 28,km/s,L2 RV Extension
+RV229,REAL,RV for SCI2 order 29,km/s,L2 RV Extension
+RV230,REAL,RV for SCI2 order 30,km/s,L2 RV Extension
+RV231,REAL,RV for SCI2 order 31,km/s,L2 RV Extension
+RV232,REAL,RV for SCI2 order 32,km/s,L2 RV Extension
+RV233,REAL,RV for SCI2 order 33,km/s,L2 RV Extension
+RV234,REAL,RV for SCI2 order 34,km/s,L2 RV Extension
+RV235,REAL,RV for SCI2 order 35,km/s,L2 RV Extension
+RV236,REAL,RV for SCI2 order 36,km/s,L2 RV Extension
+RV237,REAL,RV for SCI2 order 37,km/s,L2 RV Extension
+RV238,REAL,RV for SCI2 order 38,km/s,L2 RV Extension
+RV239,REAL,RV for SCI2 order 39,km/s,L2 RV Extension
+RV240,REAL,RV for SCI2 order 40,km/s,L2 RV Extension
+RV241,REAL,RV for SCI2 order 41,km/s,L2 RV Extension
+RV242,REAL,RV for SCI2 order 42,km/s,L2 RV Extension
+RV243,REAL,RV for SCI2 order 43,km/s,L2 RV Extension
+RV244,REAL,RV for SCI2 order 44,km/s,L2 RV Extension
+RV245,REAL,RV for SCI2 order 45,km/s,L2 RV Extension
+RV246,REAL,RV for SCI2 order 46,km/s,L2 RV Extension
+RV247,REAL,RV for SCI2 order 47,km/s,L2 RV Extension
+RV248,REAL,RV for SCI2 order 48,km/s,L2 RV Extension
+RV249,REAL,RV for SCI2 order 49,km/s,L2 RV Extension
+RV250,REAL,RV for SCI2 order 50,km/s,L2 RV Extension
+RV251,REAL,RV for SCI2 order 51,km/s,L2 RV Extension
+RV252,REAL,RV for SCI2 order 52,km/s,L2 RV Extension
+RV253,REAL,RV for SCI2 order 53,km/s,L2 RV Extension
+RV254,REAL,RV for SCI2 order 54,km/s,L2 RV Extension
+RV255,REAL,RV for SCI2 order 55,km/s,L2 RV Extension
+RV256,REAL,RV for SCI2 order 56,km/s,L2 RV Extension
+RV257,REAL,RV for SCI2 order 57,km/s,L2 RV Extension
+RV258,REAL,RV for SCI2 order 58,km/s,L2 RV Extension
+RV259,REAL,RV for SCI2 order 59,km/s,L2 RV Extension
+RV260,REAL,RV for SCI2 order 60,km/s,L2 RV Extension
+RV261,REAL,RV for SCI2 order 61,km/s,L2 RV Extension
+RV262,REAL,RV for SCI2 order 62,km/s,L2 RV Extension
+RV263,REAL,RV for SCI2 order 63,km/s,L2 RV Extension
+RV264,REAL,RV for SCI2 order 64,km/s,L2 RV Extension
+RV265,REAL,RV for SCI2 order 65,km/s,L2 RV Extension
+RV266,REAL,RV for SCI2 order 66,km/s,L2 RV Extension
+RV300,REAL,RV for SCI3 order 00,km/s,L2 RV Extension
+RV301,REAL,RV for SCI3 order 01,km/s,L2 RV Extension
+RV302,REAL,RV for SCI3 order 02,km/s,L2 RV Extension
+RV303,REAL,RV for SCI3 order 03,km/s,L2 RV Extension
+RV304,REAL,RV for SCI3 order 04,km/s,L2 RV Extension
+RV305,REAL,RV for SCI3 order 05,km/s,L2 RV Extension
+RV306,REAL,RV for SCI3 order 06,km/s,L2 RV Extension
+RV307,REAL,RV for SCI3 order 07,km/s,L2 RV Extension
+RV308,REAL,RV for SCI3 order 08,km/s,L2 RV Extension
+RV309,REAL,RV for SCI3 order 09,km/s,L2 RV Extension
+RV310,REAL,RV for SCI3 order 10,km/s,L2 RV Extension
+RV311,REAL,RV for SCI3 order 11,km/s,L2 RV Extension
+RV312,REAL,RV for SCI3 order 12,km/s,L2 RV Extension
+RV313,REAL,RV for SCI3 order 13,km/s,L2 RV Extension
+RV314,REAL,RV for SCI3 order 14,km/s,L2 RV Extension
+RV315,REAL,RV for SCI3 order 15,km/s,L2 RV Extension
+RV316,REAL,RV for SCI3 order 16,km/s,L2 RV Extension
+RV317,REAL,RV for SCI3 order 17,km/s,L2 RV Extension
+RV318,REAL,RV for SCI3 order 18,km/s,L2 RV Extension
+RV319,REAL,RV for SCI3 order 19,km/s,L2 RV Extension
+RV320,REAL,RV for SCI3 order 20,km/s,L2 RV Extension
+RV321,REAL,RV for SCI3 order 21,km/s,L2 RV Extension
+RV322,REAL,RV for SCI3 order 22,km/s,L2 RV Extension
+RV323,REAL,RV for SCI3 order 23,km/s,L2 RV Extension
+RV324,REAL,RV for SCI3 order 24,km/s,L2 RV Extension
+RV325,REAL,RV for SCI3 order 25,km/s,L2 RV Extension
+RV326,REAL,RV for SCI3 order 26,km/s,L2 RV Extension
+RV327,REAL,RV for SCI3 order 27,km/s,L2 RV Extension
+RV328,REAL,RV for SCI3 order 28,km/s,L2 RV Extension
+RV329,REAL,RV for SCI3 order 29,km/s,L2 RV Extension
+RV330,REAL,RV for SCI3 order 30,km/s,L2 RV Extension
+RV331,REAL,RV for SCI3 order 31,km/s,L2 RV Extension
+RV332,REAL,RV for SCI3 order 32,km/s,L2 RV Extension
+RV333,REAL,RV for SCI3 order 33,km/s,L2 RV Extension
+RV334,REAL,RV for SCI3 order 34,km/s,L2 RV Extension
+RV335,REAL,RV for SCI3 order 35,km/s,L2 RV Extension
+RV336,REAL,RV for SCI3 order 36,km/s,L2 RV Extension
+RV337,REAL,RV for SCI3 order 37,km/s,L2 RV Extension
+RV338,REAL,RV for SCI3 order 38,km/s,L2 RV Extension
+RV339,REAL,RV for SCI3 order 39,km/s,L2 RV Extension
+RV340,REAL,RV for SCI3 order 40,km/s,L2 RV Extension
+RV341,REAL,RV for SCI3 order 41,km/s,L2 RV Extension
+RV342,REAL,RV for SCI3 order 42,km/s,L2 RV Extension
+RV343,REAL,RV for SCI3 order 43,km/s,L2 RV Extension
+RV344,REAL,RV for SCI3 order 44,km/s,L2 RV Extension
+RV345,REAL,RV for SCI3 order 45,km/s,L2 RV Extension
+RV346,REAL,RV for SCI3 order 46,km/s,L2 RV Extension
+RV347,REAL,RV for SCI3 order 47,km/s,L2 RV Extension
+RV348,REAL,RV for SCI3 order 48,km/s,L2 RV Extension
+RV349,REAL,RV for SCI3 order 49,km/s,L2 RV Extension
+RV350,REAL,RV for SCI3 order 50,km/s,L2 RV Extension
+RV351,REAL,RV for SCI3 order 51,km/s,L2 RV Extension
+RV352,REAL,RV for SCI3 order 52,km/s,L2 RV Extension
+RV353,REAL,RV for SCI3 order 53,km/s,L2 RV Extension
+RV354,REAL,RV for SCI3 order 54,km/s,L2 RV Extension
+RV355,REAL,RV for SCI3 order 55,km/s,L2 RV Extension
+RV356,REAL,RV for SCI3 order 56,km/s,L2 RV Extension
+RV357,REAL,RV for SCI3 order 57,km/s,L2 RV Extension
+RV358,REAL,RV for SCI3 order 58,km/s,L2 RV Extension
+RV359,REAL,RV for SCI3 order 59,km/s,L2 RV Extension
+RV360,REAL,RV for SCI3 order 60,km/s,L2 RV Extension
+RV361,REAL,RV for SCI3 order 61,km/s,L2 RV Extension
+RV362,REAL,RV for SCI3 order 62,km/s,L2 RV Extension
+RV363,REAL,RV for SCI3 order 63,km/s,L2 RV Extension
+RV364,REAL,RV for SCI3 order 64,km/s,L2 RV Extension
+RV365,REAL,RV for SCI3 order 65,km/s,L2 RV Extension
+RV366,REAL,RV for SCI3 order 66,km/s,L2 RV Extension
+RVS00,REAL,RV for SCI order 00,km/s,L2 RV Extension
+RVS01,REAL,RV for SCI order 01,km/s,L2 RV Extension
+RVS02,REAL,RV for SCI order 02,km/s,L2 RV Extension
+RVS03,REAL,RV for SCI order 03,km/s,L2 RV Extension
+RVS04,REAL,RV for SCI order 04,km/s,L2 RV Extension
+RVS05,REAL,RV for SCI order 05,km/s,L2 RV Extension
+RVS06,REAL,RV for SCI order 06,km/s,L2 RV Extension
+RVS07,REAL,RV for SCI order 07,km/s,L2 RV Extension
+RVS08,REAL,RV for SCI order 08,km/s,L2 RV Extension
+RVS09,REAL,RV for SCI order 09,km/s,L2 RV Extension
+RVS10,REAL,RV for SCI order 10,km/s,L2 RV Extension
+RVS11,REAL,RV for SCI order 11,km/s,L2 RV Extension
+RVS12,REAL,RV for SCI order 12,km/s,L2 RV Extension
+RVS13,REAL,RV for SCI order 13,km/s,L2 RV Extension
+RVS14,REAL,RV for SCI order 14,km/s,L2 RV Extension
+RVS15,REAL,RV for SCI order 15,km/s,L2 RV Extension
+RVS16,REAL,RV for SCI order 16,km/s,L2 RV Extension
+RVS17,REAL,RV for SCI order 17,km/s,L2 RV Extension
+RVS18,REAL,RV for SCI order 18,km/s,L2 RV Extension
+RVS19,REAL,RV for SCI order 19,km/s,L2 RV Extension
+RVS20,REAL,RV for SCI order 20,km/s,L2 RV Extension
+RVS21,REAL,RV for SCI order 21,km/s,L2 RV Extension
+RVS22,REAL,RV for SCI order 22,km/s,L2 RV Extension
+RVS23,REAL,RV for SCI order 23,km/s,L2 RV Extension
+RVS24,REAL,RV for SCI order 24,km/s,L2 RV Extension
+RVS25,REAL,RV for SCI order 25,km/s,L2 RV Extension
+RVS26,REAL,RV for SCI order 26,km/s,L2 RV Extension
+RVS27,REAL,RV for SCI order 27,km/s,L2 RV Extension
+RVS28,REAL,RV for SCI order 28,km/s,L2 RV Extension
+RVS29,REAL,RV for SCI order 29,km/s,L2 RV Extension
+RVS30,REAL,RV for SCI order 30,km/s,L2 RV Extension
+RVS31,REAL,RV for SCI order 31,km/s,L2 RV Extension
+RVS32,REAL,RV for SCI order 32,km/s,L2 RV Extension
+RVS33,REAL,RV for SCI order 33,km/s,L2 RV Extension
+RVS34,REAL,RV for SCI order 34,km/s,L2 RV Extension
+RVS35,REAL,RV for SCI order 35,km/s,L2 RV Extension
+RVS36,REAL,RV for SCI order 36,km/s,L2 RV Extension
+RVS37,REAL,RV for SCI order 37,km/s,L2 RV Extension
+RVS38,REAL,RV for SCI order 38,km/s,L2 RV Extension
+RVS39,REAL,RV for SCI order 39,km/s,L2 RV Extension
+RVS40,REAL,RV for SCI order 40,km/s,L2 RV Extension
+RVS41,REAL,RV for SCI order 41,km/s,L2 RV Extension
+RVS42,REAL,RV for SCI order 42,km/s,L2 RV Extension
+RVS43,REAL,RV for SCI order 43,km/s,L2 RV Extension
+RVS44,REAL,RV for SCI order 44,km/s,L2 RV Extension
+RVS45,REAL,RV for SCI order 45,km/s,L2 RV Extension
+RVS46,REAL,RV for SCI order 46,km/s,L2 RV Extension
+RVS47,REAL,RV for SCI order 47,km/s,L2 RV Extension
+RVS48,REAL,RV for SCI order 48,km/s,L2 RV Extension
+RVS49,REAL,RV for SCI order 49,km/s,L2 RV Extension
+RVS50,REAL,RV for SCI order 50,km/s,L2 RV Extension
+RVS51,REAL,RV for SCI order 51,km/s,L2 RV Extension
+RVS52,REAL,RV for SCI order 52,km/s,L2 RV Extension
+RVS53,REAL,RV for SCI order 53,km/s,L2 RV Extension
+RVS54,REAL,RV for SCI order 54,km/s,L2 RV Extension
+RVS55,REAL,RV for SCI order 55,km/s,L2 RV Extension
+RVS56,REAL,RV for SCI order 56,km/s,L2 RV Extension
+RVS57,REAL,RV for SCI order 57,km/s,L2 RV Extension
+RVS58,REAL,RV for SCI order 58,km/s,L2 RV Extension
+RVS59,REAL,RV for SCI order 59,km/s,L2 RV Extension
+RVS60,REAL,RV for SCI order 60,km/s,L2 RV Extension
+RVS61,REAL,RV for SCI order 61,km/s,L2 RV Extension
+RVS62,REAL,RV for SCI order 62,km/s,L2 RV Extension
+RVS63,REAL,RV for SCI order 63,km/s,L2 RV Extension
+RVS64,REAL,RV for SCI order 64,km/s,L2 RV Extension
+RVS65,REAL,RV for SCI order 65,km/s,L2 RV Extension
+RVS66,REAL,RV for SCI order 66,km/s,L2 RV Extension
+ERVS00,REAL,Error in RV for SCI order 00,km/s,L2 RV Extension
+ERVS01,REAL,Error in RV for SCI order 01,km/s,L2 RV Extension
+ERVS02,REAL,Error in RV for SCI order 02,km/s,L2 RV Extension
+ERVS03,REAL,Error in RV for SCI order 03,km/s,L2 RV Extension
+ERVS04,REAL,Error in RV for SCI order 04,km/s,L2 RV Extension
+ERVS05,REAL,Error in RV for SCI order 05,km/s,L2 RV Extension
+ERVS06,REAL,Error in RV for SCI order 06,km/s,L2 RV Extension
+ERVS07,REAL,Error in RV for SCI order 07,km/s,L2 RV Extension
+ERVS08,REAL,Error in RV for SCI order 08,km/s,L2 RV Extension
+ERVS09,REAL,Error in RV for SCI order 09,km/s,L2 RV Extension
+ERVS10,REAL,Error in RV for SCI order 10,km/s,L2 RV Extension
+ERVS11,REAL,Error in RV for SCI order 11,km/s,L2 RV Extension
+ERVS12,REAL,Error in RV for SCI order 12,km/s,L2 RV Extension
+ERVS13,REAL,Error in RV for SCI order 13,km/s,L2 RV Extension
+ERVS14,REAL,Error in RV for SCI order 14,km/s,L2 RV Extension
+ERVS15,REAL,Error in RV for SCI order 15,km/s,L2 RV Extension
+ERVS16,REAL,Error in RV for SCI order 16,km/s,L2 RV Extension
+ERVS17,REAL,Error in RV for SCI order 17,km/s,L2 RV Extension
+ERVS18,REAL,Error in RV for SCI order 18,km/s,L2 RV Extension
+ERVS19,REAL,Error in RV for SCI order 19,km/s,L2 RV Extension
+ERVS20,REAL,Error in RV for SCI order 20,km/s,L2 RV Extension
+ERVS21,REAL,Error in RV for SCI order 21,km/s,L2 RV Extension
+ERVS22,REAL,Error in RV for SCI order 22,km/s,L2 RV Extension
+ERVS23,REAL,Error in RV for SCI order 23,km/s,L2 RV Extension
+ERVS24,REAL,Error in RV for SCI order 24,km/s,L2 RV Extension
+ERVS25,REAL,Error in RV for SCI order 25,km/s,L2 RV Extension
+ERVS26,REAL,Error in RV for SCI order 26,km/s,L2 RV Extension
+ERVS27,REAL,Error in RV for SCI order 27,km/s,L2 RV Extension
+ERVS28,REAL,Error in RV for SCI order 28,km/s,L2 RV Extension
+ERVS29,REAL,Error in RV for SCI order 29,km/s,L2 RV Extension
+ERVS30,REAL,Error in RV for SCI order 30,km/s,L2 RV Extension
+ERVS31,REAL,Error in RV for SCI order 31,km/s,L2 RV Extension
+ERVS32,REAL,Error in RV for SCI order 32,km/s,L2 RV Extension
+ERVS33,REAL,Error in RV for SCI order 33,km/s,L2 RV Extension
+ERVS34,REAL,Error in RV for SCI order 34,km/s,L2 RV Extension
+ERVS35,REAL,Error in RV for SCI order 35,km/s,L2 RV Extension
+ERVS36,REAL,Error in RV for SCI order 36,km/s,L2 RV Extension
+ERVS37,REAL,Error in RV for SCI order 37,km/s,L2 RV Extension
+ERVS38,REAL,Error in RV for SCI order 38,km/s,L2 RV Extension
+ERVS39,REAL,Error in RV for SCI order 39,km/s,L2 RV Extension
+ERVS40,REAL,Error in RV for SCI order 40,km/s,L2 RV Extension
+ERVS41,REAL,Error in RV for SCI order 41,km/s,L2 RV Extension
+ERVS42,REAL,Error in RV for SCI order 42,km/s,L2 RV Extension
+ERVS43,REAL,Error in RV for SCI order 43,km/s,L2 RV Extension
+ERVS44,REAL,Error in RV for SCI order 44,km/s,L2 RV Extension
+ERVS45,REAL,Error in RV for SCI order 45,km/s,L2 RV Extension
+ERVS46,REAL,Error in RV for SCI order 46,km/s,L2 RV Extension
+ERVS47,REAL,Error in RV for SCI order 47,km/s,L2 RV Extension
+ERVS48,REAL,Error in RV for SCI order 48,km/s,L2 RV Extension
+ERVS49,REAL,Error in RV for SCI order 49,km/s,L2 RV Extension
+ERVS50,REAL,Error in RV for SCI order 50,km/s,L2 RV Extension
+ERVS51,REAL,Error in RV for SCI order 51,km/s,L2 RV Extension
+ERVS52,REAL,Error in RV for SCI order 52,km/s,L2 RV Extension
+ERVS53,REAL,Error in RV for SCI order 53,km/s,L2 RV Extension
+ERVS54,REAL,Error in RV for SCI order 54,km/s,L2 RV Extension
+ERVS55,REAL,Error in RV for SCI order 55,km/s,L2 RV Extension
+ERVS56,REAL,Error in RV for SCI order 56,km/s,L2 RV Extension
+ERVS57,REAL,Error in RV for SCI order 57,km/s,L2 RV Extension
+ERVS58,REAL,Error in RV for SCI order 58,km/s,L2 RV Extension
+ERVS59,REAL,Error in RV for SCI order 59,km/s,L2 RV Extension
+ERVS60,REAL,Error in RV for SCI order 60,km/s,L2 RV Extension
+ERVS61,REAL,Error in RV for SCI order 61,km/s,L2 RV Extension
+ERVS62,REAL,Error in RV for SCI order 62,km/s,L2 RV Extension
+ERVS63,REAL,Error in RV for SCI order 63,km/s,L2 RV Extension
+ERVS64,REAL,Error in RV for SCI order 64,km/s,L2 RV Extension
+ERVS65,REAL,Error in RV for SCI order 65,km/s,L2 RV Extension
+ERVS66,REAL,Error in RV for SCI order 66,km/s,L2 RV Extension
+RVC00,REAL,RV for CAL order 00,km/s,L2 RV Extension
+RVC01,REAL,RV for CAL order 01,km/s,L2 RV Extension
+RVC02,REAL,RV for CAL order 02,km/s,L2 RV Extension
+RVC03,REAL,RV for CAL order 03,km/s,L2 RV Extension
+RVC04,REAL,RV for CAL order 04,km/s,L2 RV Extension
+RVC05,REAL,RV for CAL order 05,km/s,L2 RV Extension
+RVC06,REAL,RV for CAL order 06,km/s,L2 RV Extension
+RVC07,REAL,RV for CAL order 07,km/s,L2 RV Extension
+RVC08,REAL,RV for CAL order 08,km/s,L2 RV Extension
+RVC09,REAL,RV for CAL order 09,km/s,L2 RV Extension
+RVC10,REAL,RV for CAL order 10,km/s,L2 RV Extension
+RVC11,REAL,RV for CAL order 11,km/s,L2 RV Extension
+RVC12,REAL,RV for CAL order 12,km/s,L2 RV Extension
+RVC13,REAL,RV for CAL order 13,km/s,L2 RV Extension
+RVC14,REAL,RV for CAL order 14,km/s,L2 RV Extension
+RVC15,REAL,RV for CAL order 15,km/s,L2 RV Extension
+RVC16,REAL,RV for CAL order 16,km/s,L2 RV Extension
+RVC17,REAL,RV for CAL order 17,km/s,L2 RV Extension
+RVC18,REAL,RV for CAL order 18,km/s,L2 RV Extension
+RVC19,REAL,RV for CAL order 19,km/s,L2 RV Extension
+RVC20,REAL,RV for CAL order 20,km/s,L2 RV Extension
+RVC21,REAL,RV for CAL order 21,km/s,L2 RV Extension
+RVC22,REAL,RV for CAL order 22,km/s,L2 RV Extension
+RVC23,REAL,RV for CAL order 23,km/s,L2 RV Extension
+RVC24,REAL,RV for CAL order 24,km/s,L2 RV Extension
+RVC25,REAL,RV for CAL order 25,km/s,L2 RV Extension
+RVC26,REAL,RV for CAL order 26,km/s,L2 RV Extension
+RVC27,REAL,RV for CAL order 27,km/s,L2 RV Extension
+RVC28,REAL,RV for CAL order 28,km/s,L2 RV Extension
+RVC29,REAL,RV for CAL order 29,km/s,L2 RV Extension
+RVC30,REAL,RV for CAL order 30,km/s,L2 RV Extension
+RVC31,REAL,RV for CAL order 31,km/s,L2 RV Extension
+RVC32,REAL,RV for CAL order 32,km/s,L2 RV Extension
+RVC33,REAL,RV for CAL order 33,km/s,L2 RV Extension
+RVC34,REAL,RV for CAL order 34,km/s,L2 RV Extension
+RVC35,REAL,RV for CAL order 35,km/s,L2 RV Extension
+RVC36,REAL,RV for CAL order 36,km/s,L2 RV Extension
+RVC37,REAL,RV for CAL order 37,km/s,L2 RV Extension
+RVC38,REAL,RV for CAL order 38,km/s,L2 RV Extension
+RVC39,REAL,RV for CAL order 39,km/s,L2 RV Extension
+RVC40,REAL,RV for CAL order 40,km/s,L2 RV Extension
+RVC41,REAL,RV for CAL order 41,km/s,L2 RV Extension
+RVC42,REAL,RV for CAL order 42,km/s,L2 RV Extension
+RVC43,REAL,RV for CAL order 43,km/s,L2 RV Extension
+RVC44,REAL,RV for CAL order 44,km/s,L2 RV Extension
+RVC45,REAL,RV for CAL order 45,km/s,L2 RV Extension
+RVC46,REAL,RV for CAL order 46,km/s,L2 RV Extension
+RVC47,REAL,RV for CAL order 47,km/s,L2 RV Extension
+RVC48,REAL,RV for CAL order 48,km/s,L2 RV Extension
+RVC49,REAL,RV for CAL order 49,km/s,L2 RV Extension
+RVC50,REAL,RV for CAL order 50,km/s,L2 RV Extension
+RVC51,REAL,RV for CAL order 51,km/s,L2 RV Extension
+RVC52,REAL,RV for CAL order 52,km/s,L2 RV Extension
+RVC53,REAL,RV for CAL order 53,km/s,L2 RV Extension
+RVC54,REAL,RV for CAL order 54,km/s,L2 RV Extension
+RVC55,REAL,RV for CAL order 55,km/s,L2 RV Extension
+RVC56,REAL,RV for CAL order 56,km/s,L2 RV Extension
+RVC57,REAL,RV for CAL order 57,km/s,L2 RV Extension
+RVC58,REAL,RV for CAL order 58,km/s,L2 RV Extension
+RVC59,REAL,RV for CAL order 59,km/s,L2 RV Extension
+RVC60,REAL,RV for CAL order 60,km/s,L2 RV Extension
+RVC61,REAL,RV for CAL order 61,km/s,L2 RV Extension
+RVC62,REAL,RV for CAL order 62,km/s,L2 RV Extension
+RVC63,REAL,RV for CAL order 63,km/s,L2 RV Extension
+RVC64,REAL,RV for CAL order 64,km/s,L2 RV Extension
+RVC65,REAL,RV for CAL order 65,km/s,L2 RV Extension
+RVC66,REAL,RV for CAL order 66,km/s,L2 RV Extension
+ERVC00,REAL,Error in RV for CAL order 00,km/s,L2 RV Extension
+ERVC01,REAL,Error in RV for CAL order 01,km/s,L2 RV Extension
+ERVC02,REAL,Error in RV for CAL order 02,km/s,L2 RV Extension
+ERVC03,REAL,Error in RV for CAL order 03,km/s,L2 RV Extension
+ERVC04,REAL,Error in RV for CAL order 04,km/s,L2 RV Extension
+ERVC05,REAL,Error in RV for CAL order 05,km/s,L2 RV Extension
+ERVC06,REAL,Error in RV for CAL order 06,km/s,L2 RV Extension
+ERVC07,REAL,Error in RV for CAL order 07,km/s,L2 RV Extension
+ERVC08,REAL,Error in RV for CAL order 08,km/s,L2 RV Extension
+ERVC09,REAL,Error in RV for CAL order 09,km/s,L2 RV Extension
+ERVC10,REAL,Error in RV for CAL order 10,km/s,L2 RV Extension
+ERVC11,REAL,Error in RV for CAL order 11,km/s,L2 RV Extension
+ERVC12,REAL,Error in RV for CAL order 12,km/s,L2 RV Extension
+ERVC13,REAL,Error in RV for CAL order 13,km/s,L2 RV Extension
+ERVC14,REAL,Error in RV for CAL order 14,km/s,L2 RV Extension
+ERVC15,REAL,Error in RV for CAL order 15,km/s,L2 RV Extension
+ERVC16,REAL,Error in RV for CAL order 16,km/s,L2 RV Extension
+ERVC17,REAL,Error in RV for CAL order 17,km/s,L2 RV Extension
+ERVC18,REAL,Error in RV for CAL order 18,km/s,L2 RV Extension
+ERVC19,REAL,Error in RV for CAL order 19,km/s,L2 RV Extension
+ERVC20,REAL,Error in RV for CAL order 20,km/s,L2 RV Extension
+ERVC21,REAL,Error in RV for CAL order 21,km/s,L2 RV Extension
+ERVC22,REAL,Error in RV for CAL order 22,km/s,L2 RV Extension
+ERVC23,REAL,Error in RV for CAL order 23,km/s,L2 RV Extension
+ERVC24,REAL,Error in RV for CAL order 24,km/s,L2 RV Extension
+ERVC25,REAL,Error in RV for CAL order 25,km/s,L2 RV Extension
+ERVC26,REAL,Error in RV for CAL order 26,km/s,L2 RV Extension
+ERVC27,REAL,Error in RV for CAL order 27,km/s,L2 RV Extension
+ERVC28,REAL,Error in RV for CAL order 28,km/s,L2 RV Extension
+ERVC29,REAL,Error in RV for CAL order 29,km/s,L2 RV Extension
+ERVC30,REAL,Error in RV for CAL order 30,km/s,L2 RV Extension
+ERVC31,REAL,Error in RV for CAL order 31,km/s,L2 RV Extension
+ERVC32,REAL,Error in RV for CAL order 32,km/s,L2 RV Extension
+ERVC33,REAL,Error in RV for CAL order 33,km/s,L2 RV Extension
+ERVC34,REAL,Error in RV for CAL order 34,km/s,L2 RV Extension
+ERVC35,REAL,Error in RV for CAL order 35,km/s,L2 RV Extension
+ERVC36,REAL,Error in RV for CAL order 36,km/s,L2 RV Extension
+ERVC37,REAL,Error in RV for CAL order 37,km/s,L2 RV Extension
+ERVC38,REAL,Error in RV for CAL order 38,km/s,L2 RV Extension
+ERVC39,REAL,Error in RV for CAL order 39,km/s,L2 RV Extension
+ERVC40,REAL,Error in RV for CAL order 40,km/s,L2 RV Extension
+ERVC41,REAL,Error in RV for CAL order 41,km/s,L2 RV Extension
+ERVC42,REAL,Error in RV for CAL order 42,km/s,L2 RV Extension
+ERVC43,REAL,Error in RV for CAL order 43,km/s,L2 RV Extension
+ERVC44,REAL,Error in RV for CAL order 44,km/s,L2 RV Extension
+ERVC45,REAL,Error in RV for CAL order 45,km/s,L2 RV Extension
+ERVC46,REAL,Error in RV for CAL order 46,km/s,L2 RV Extension
+ERVC47,REAL,Error in RV for CAL order 47,km/s,L2 RV Extension
+ERVC48,REAL,Error in RV for CAL order 48,km/s,L2 RV Extension
+ERVC49,REAL,Error in RV for CAL order 49,km/s,L2 RV Extension
+ERVC50,REAL,Error in RV for CAL order 50,km/s,L2 RV Extension
+ERVC51,REAL,Error in RV for CAL order 51,km/s,L2 RV Extension
+ERVC52,REAL,Error in RV for CAL order 52,km/s,L2 RV Extension
+ERVC53,REAL,Error in RV for CAL order 53,km/s,L2 RV Extension
+ERVC54,REAL,Error in RV for CAL order 54,km/s,L2 RV Extension
+ERVC55,REAL,Error in RV for CAL order 55,km/s,L2 RV Extension
+ERVC56,REAL,Error in RV for CAL order 56,km/s,L2 RV Extension
+ERVC57,REAL,Error in RV for CAL order 57,km/s,L2 RV Extension
+ERVC58,REAL,Error in RV for CAL order 58,km/s,L2 RV Extension
+ERVC59,REAL,Error in RV for CAL order 59,km/s,L2 RV Extension
+ERVC60,REAL,Error in RV for CAL order 60,km/s,L2 RV Extension
+ERVC61,REAL,Error in RV for CAL order 61,km/s,L2 RV Extension
+ERVC62,REAL,Error in RV for CAL order 62,km/s,L2 RV Extension
+ERVC63,REAL,Error in RV for CAL order 63,km/s,L2 RV Extension
+ERVC64,REAL,Error in RV for CAL order 64,km/s,L2 RV Extension
+ERVC65,REAL,Error in RV for CAL order 65,km/s,L2 RV Extension
+ERVC66,REAL,Error in RV for CAL order 66,km/s,L2 RV Extension
+RVY00,REAL,RV for SKY order 00,km/s,L2 RV Extension
+RVY01,REAL,RV for SKY order 01,km/s,L2 RV Extension
+RVY02,REAL,RV for SKY order 02,km/s,L2 RV Extension
+RVY03,REAL,RV for SKY order 03,km/s,L2 RV Extension
+RVY04,REAL,RV for SKY order 04,km/s,L2 RV Extension
+RVY05,REAL,RV for SKY order 05,km/s,L2 RV Extension
+RVY06,REAL,RV for SKY order 06,km/s,L2 RV Extension
+RVY07,REAL,RV for SKY order 07,km/s,L2 RV Extension
+RVY08,REAL,RV for SKY order 08,km/s,L2 RV Extension
+RVY09,REAL,RV for SKY order 09,km/s,L2 RV Extension
+RVY10,REAL,RV for SKY order 10,km/s,L2 RV Extension
+RVY11,REAL,RV for SKY order 11,km/s,L2 RV Extension
+RVY12,REAL,RV for SKY order 12,km/s,L2 RV Extension
+RVY13,REAL,RV for SKY order 13,km/s,L2 RV Extension
+RVY14,REAL,RV for SKY order 14,km/s,L2 RV Extension
+RVY15,REAL,RV for SKY order 15,km/s,L2 RV Extension
+RVY16,REAL,RV for SKY order 16,km/s,L2 RV Extension
+RVY17,REAL,RV for SKY order 17,km/s,L2 RV Extension
+RVY18,REAL,RV for SKY order 18,km/s,L2 RV Extension
+RVY19,REAL,RV for SKY order 19,km/s,L2 RV Extension
+RVY20,REAL,RV for SKY order 20,km/s,L2 RV Extension
+RVY21,REAL,RV for SKY order 21,km/s,L2 RV Extension
+RVY22,REAL,RV for SKY order 22,km/s,L2 RV Extension
+RVY23,REAL,RV for SKY order 23,km/s,L2 RV Extension
+RVY24,REAL,RV for SKY order 24,km/s,L2 RV Extension
+RVY25,REAL,RV for SKY order 25,km/s,L2 RV Extension
+RVY26,REAL,RV for SKY order 26,km/s,L2 RV Extension
+RVY27,REAL,RV for SKY order 27,km/s,L2 RV Extension
+RVY28,REAL,RV for SKY order 28,km/s,L2 RV Extension
+RVY29,REAL,RV for SKY order 29,km/s,L2 RV Extension
+RVY30,REAL,RV for SKY order 30,km/s,L2 RV Extension
+RVY31,REAL,RV for SKY order 31,km/s,L2 RV Extension
+RVY32,REAL,RV for SKY order 32,km/s,L2 RV Extension
+RVY33,REAL,RV for SKY order 33,km/s,L2 RV Extension
+RVY34,REAL,RV for SKY order 34,km/s,L2 RV Extension
+RVY35,REAL,RV for SKY order 35,km/s,L2 RV Extension
+RVY36,REAL,RV for SKY order 36,km/s,L2 RV Extension
+RVY37,REAL,RV for SKY order 37,km/s,L2 RV Extension
+RVY38,REAL,RV for SKY order 38,km/s,L2 RV Extension
+RVY39,REAL,RV for SKY order 39,km/s,L2 RV Extension
+RVY40,REAL,RV for SKY order 40,km/s,L2 RV Extension
+RVY41,REAL,RV for SKY order 41,km/s,L2 RV Extension
+RVY42,REAL,RV for SKY order 42,km/s,L2 RV Extension
+RVY43,REAL,RV for SKY order 43,km/s,L2 RV Extension
+RVY44,REAL,RV for SKY order 44,km/s,L2 RV Extension
+RVY45,REAL,RV for SKY order 45,km/s,L2 RV Extension
+RVY46,REAL,RV for SKY order 46,km/s,L2 RV Extension
+RVY47,REAL,RV for SKY order 47,km/s,L2 RV Extension
+RVY48,REAL,RV for SKY order 48,km/s,L2 RV Extension
+RVY49,REAL,RV for SKY order 49,km/s,L2 RV Extension
+RVY50,REAL,RV for SKY order 50,km/s,L2 RV Extension
+RVY51,REAL,RV for SKY order 51,km/s,L2 RV Extension
+RVY52,REAL,RV for SKY order 52,km/s,L2 RV Extension
+RVY53,REAL,RV for SKY order 53,km/s,L2 RV Extension
+RVY54,REAL,RV for SKY order 54,km/s,L2 RV Extension
+RVY55,REAL,RV for SKY order 55,km/s,L2 RV Extension
+RVY56,REAL,RV for SKY order 56,km/s,L2 RV Extension
+RVY57,REAL,RV for SKY order 57,km/s,L2 RV Extension
+RVY58,REAL,RV for SKY order 58,km/s,L2 RV Extension
+RVY59,REAL,RV for SKY order 59,km/s,L2 RV Extension
+RVY60,REAL,RV for SKY order 60,km/s,L2 RV Extension
+RVY61,REAL,RV for SKY order 61,km/s,L2 RV Extension
+RVY62,REAL,RV for SKY order 62,km/s,L2 RV Extension
+RVY63,REAL,RV for SKY order 63,km/s,L2 RV Extension
+RVY64,REAL,RV for SKY order 64,km/s,L2 RV Extension
+RVY65,REAL,RV for SKY order 65,km/s,L2 RV Extension
+RVY66,REAL,RV for SKY order 66,km/s,L2 RV Extension
+ERVY00,REAL,Error in RV for SKY order 00,km/s,L2 RV Extension
+ERVY01,REAL,Error in RV for SKY order 01,km/s,L2 RV Extension
+ERVY02,REAL,Error in RV for SKY order 02,km/s,L2 RV Extension
+ERVY03,REAL,Error in RV for SKY order 03,km/s,L2 RV Extension
+ERVY04,REAL,Error in RV for SKY order 04,km/s,L2 RV Extension
+ERVY05,REAL,Error in RV for SKY order 05,km/s,L2 RV Extension
+ERVY06,REAL,Error in RV for SKY order 06,km/s,L2 RV Extension
+ERVY07,REAL,Error in RV for SKY order 07,km/s,L2 RV Extension
+ERVY08,REAL,Error in RV for SKY order 08,km/s,L2 RV Extension
+ERVY09,REAL,Error in RV for SKY order 09,km/s,L2 RV Extension
+ERVY10,REAL,Error in RV for SKY order 10,km/s,L2 RV Extension
+ERVY11,REAL,Error in RV for SKY order 11,km/s,L2 RV Extension
+ERVY12,REAL,Error in RV for SKY order 12,km/s,L2 RV Extension
+ERVY13,REAL,Error in RV for SKY order 13,km/s,L2 RV Extension
+ERVY14,REAL,Error in RV for SKY order 14,km/s,L2 RV Extension
+ERVY15,REAL,Error in RV for SKY order 15,km/s,L2 RV Extension
+ERVY16,REAL,Error in RV for SKY order 16,km/s,L2 RV Extension
+ERVY17,REAL,Error in RV for SKY order 17,km/s,L2 RV Extension
+ERVY18,REAL,Error in RV for SKY order 18,km/s,L2 RV Extension
+ERVY19,REAL,Error in RV for SKY order 19,km/s,L2 RV Extension
+ERVY20,REAL,Error in RV for SKY order 20,km/s,L2 RV Extension
+ERVY21,REAL,Error in RV for SKY order 21,km/s,L2 RV Extension
+ERVY22,REAL,Error in RV for SKY order 22,km/s,L2 RV Extension
+ERVY23,REAL,Error in RV for SKY order 23,km/s,L2 RV Extension
+ERVY24,REAL,Error in RV for SKY order 24,km/s,L2 RV Extension
+ERVY25,REAL,Error in RV for SKY order 25,km/s,L2 RV Extension
+ERVY26,REAL,Error in RV for SKY order 26,km/s,L2 RV Extension
+ERVY27,REAL,Error in RV for SKY order 27,km/s,L2 RV Extension
+ERVY28,REAL,Error in RV for SKY order 28,km/s,L2 RV Extension
+ERVY29,REAL,Error in RV for SKY order 29,km/s,L2 RV Extension
+ERVY30,REAL,Error in RV for SKY order 30,km/s,L2 RV Extension
+ERVY31,REAL,Error in RV for SKY order 31,km/s,L2 RV Extension
+ERVY32,REAL,Error in RV for SKY order 32,km/s,L2 RV Extension
+ERVY33,REAL,Error in RV for SKY order 33,km/s,L2 RV Extension
+ERVY34,REAL,Error in RV for SKY order 34,km/s,L2 RV Extension
+ERVY35,REAL,Error in RV for SKY order 35,km/s,L2 RV Extension
+ERVY36,REAL,Error in RV for SKY order 36,km/s,L2 RV Extension
+ERVY37,REAL,Error in RV for SKY order 37,km/s,L2 RV Extension
+ERVY38,REAL,Error in RV for SKY order 38,km/s,L2 RV Extension
+ERVY39,REAL,Error in RV for SKY order 39,km/s,L2 RV Extension
+ERVY40,REAL,Error in RV for SKY order 40,km/s,L2 RV Extension
+ERVY41,REAL,Error in RV for SKY order 41,km/s,L2 RV Extension
+ERVY42,REAL,Error in RV for SKY order 42,km/s,L2 RV Extension
+ERVY43,REAL,Error in RV for SKY order 43,km/s,L2 RV Extension
+ERVY44,REAL,Error in RV for SKY order 44,km/s,L2 RV Extension
+ERVY45,REAL,Error in RV for SKY order 45,km/s,L2 RV Extension
+ERVY46,REAL,Error in RV for SKY order 46,km/s,L2 RV Extension
+ERVY47,REAL,Error in RV for SKY order 47,km/s,L2 RV Extension
+ERVY48,REAL,Error in RV for SKY order 48,km/s,L2 RV Extension
+ERVY49,REAL,Error in RV for SKY order 49,km/s,L2 RV Extension
+ERVY50,REAL,Error in RV for SKY order 50,km/s,L2 RV Extension
+ERVY51,REAL,Error in RV for SKY order 51,km/s,L2 RV Extension
+ERVY52,REAL,Error in RV for SKY order 52,km/s,L2 RV Extension
+ERVY53,REAL,Error in RV for SKY order 53,km/s,L2 RV Extension
+ERVY54,REAL,Error in RV for SKY order 54,km/s,L2 RV Extension
+ERVY55,REAL,Error in RV for SKY order 55,km/s,L2 RV Extension
+ERVY56,REAL,Error in RV for SKY order 56,km/s,L2 RV Extension
+ERVY57,REAL,Error in RV for SKY order 57,km/s,L2 RV Extension
+ERVY58,REAL,Error in RV for SKY order 58,km/s,L2 RV Extension
+ERVY59,REAL,Error in RV for SKY order 59,km/s,L2 RV Extension
+ERVY60,REAL,Error in RV for SKY order 60,km/s,L2 RV Extension
+ERVY61,REAL,Error in RV for SKY order 61,km/s,L2 RV Extension
+ERVY62,REAL,Error in RV for SKY order 62,km/s,L2 RV Extension
+ERVY63,REAL,Error in RV for SKY order 63,km/s,L2 RV Extension
+ERVY64,REAL,Error in RV for SKY order 64,km/s,L2 RV Extension
+ERVY65,REAL,Error in RV for SKY order 65,km/s,L2 RV Extension
+ERVY66,REAL,Error in RV for SKY order 66,km/s,L2 RV Extension
+CCFBJD00,REAL,BJD for order 00,days,L2 RV Extension
+CCFBJD01,REAL,BJD for order 01,days,L2 RV Extension
+CCFBJD02,REAL,BJD for order 02,days,L2 RV Extension
+CCFBJD03,REAL,BJD for order 03,days,L2 RV Extension
+CCFBJD04,REAL,BJD for order 04,days,L2 RV Extension
+CCFBJD05,REAL,BJD for order 05,days,L2 RV Extension
+CCFBJD06,REAL,BJD for order 06,days,L2 RV Extension
+CCFBJD07,REAL,BJD for order 07,days,L2 RV Extension
+CCFBJD08,REAL,BJD for order 08,days,L2 RV Extension
+CCFBJD09,REAL,BJD for order 09,days,L2 RV Extension
+CCFBJD10,REAL,BJD for order 10,days,L2 RV Extension
+CCFBJD11,REAL,BJD for order 11,days,L2 RV Extension
+CCFBJD12,REAL,BJD for order 12,days,L2 RV Extension
+CCFBJD13,REAL,BJD for order 13,days,L2 RV Extension
+CCFBJD14,REAL,BJD for order 14,days,L2 RV Extension
+CCFBJD15,REAL,BJD for order 15,days,L2 RV Extension
+CCFBJD16,REAL,BJD for order 16,days,L2 RV Extension
+CCFBJD17,REAL,BJD for order 17,days,L2 RV Extension
+CCFBJD18,REAL,BJD for order 18,days,L2 RV Extension
+CCFBJD19,REAL,BJD for order 19,days,L2 RV Extension
+CCFBJD20,REAL,BJD for order 20,days,L2 RV Extension
+CCFBJD21,REAL,BJD for order 21,days,L2 RV Extension
+CCFBJD22,REAL,BJD for order 22,days,L2 RV Extension
+CCFBJD23,REAL,BJD for order 23,days,L2 RV Extension
+CCFBJD24,REAL,BJD for order 24,days,L2 RV Extension
+CCFBJD25,REAL,BJD for order 25,days,L2 RV Extension
+CCFBJD26,REAL,BJD for order 26,days,L2 RV Extension
+CCFBJD27,REAL,BJD for order 27,days,L2 RV Extension
+CCFBJD28,REAL,BJD for order 28,days,L2 RV Extension
+CCFBJD29,REAL,BJD for order 29,days,L2 RV Extension
+CCFBJD30,REAL,BJD for order 30,days,L2 RV Extension
+CCFBJD31,REAL,BJD for order 31,days,L2 RV Extension
+CCFBJD32,REAL,BJD for order 32,days,L2 RV Extension
+CCFBJD33,REAL,BJD for order 33,days,L2 RV Extension
+CCFBJD34,REAL,BJD for order 34,days,L2 RV Extension
+CCFBJD35,REAL,BJD for order 35,days,L2 RV Extension
+CCFBJD36,REAL,BJD for order 36,days,L2 RV Extension
+CCFBJD37,REAL,BJD for order 37,days,L2 RV Extension
+CCFBJD38,REAL,BJD for order 38,days,L2 RV Extension
+CCFBJD39,REAL,BJD for order 39,days,L2 RV Extension
+CCFBJD40,REAL,BJD for order 40,days,L2 RV Extension
+CCFBJD41,REAL,BJD for order 41,days,L2 RV Extension
+CCFBJD42,REAL,BJD for order 42,days,L2 RV Extension
+CCFBJD43,REAL,BJD for order 43,days,L2 RV Extension
+CCFBJD44,REAL,BJD for order 44,days,L2 RV Extension
+CCFBJD45,REAL,BJD for order 45,days,L2 RV Extension
+CCFBJD46,REAL,BJD for order 46,days,L2 RV Extension
+CCFBJD47,REAL,BJD for order 47,days,L2 RV Extension
+CCFBJD48,REAL,BJD for order 48,days,L2 RV Extension
+CCFBJD49,REAL,BJD for order 49,days,L2 RV Extension
+CCFBJD50,REAL,BJD for order 50,days,L2 RV Extension
+CCFBJD51,REAL,BJD for order 51,days,L2 RV Extension
+CCFBJD52,REAL,BJD for order 52,days,L2 RV Extension
+CCFBJD53,REAL,BJD for order 53,days,L2 RV Extension
+CCFBJD54,REAL,BJD for order 54,days,L2 RV Extension
+CCFBJD55,REAL,BJD for order 55,days,L2 RV Extension
+CCFBJD56,REAL,BJD for order 56,days,L2 RV Extension
+CCFBJD57,REAL,BJD for order 57,days,L2 RV Extension
+CCFBJD58,REAL,BJD for order 58,days,L2 RV Extension
+CCFBJD59,REAL,BJD for order 59,days,L2 RV Extension
+CCFBJD60,REAL,BJD for order 60,days,L2 RV Extension
+CCFBJD61,REAL,BJD for order 61,days,L2 RV Extension
+CCFBJD62,REAL,BJD for order 62,days,L2 RV Extension
+CCFBJD63,REAL,BJD for order 63,days,L2 RV Extension
+CCFBJD64,REAL,BJD for order 64,days,L2 RV Extension
+CCFBJD65,REAL,BJD for order 65,days,L2 RV Extension
+CCFBJD66,REAL,BJD for order 66,days,L2 RV Extension
+BCRV00,REAL,Barycentric RV for order 00,km/s,L2 RV Extension
+BCRV01,REAL,Barycentric RV for order 01,km/s,L2 RV Extension
+BCRV02,REAL,Barycentric RV for order 02,km/s,L2 RV Extension
+BCRV03,REAL,Barycentric RV for order 03,km/s,L2 RV Extension
+BCRV04,REAL,Barycentric RV for order 04,km/s,L2 RV Extension
+BCRV05,REAL,Barycentric RV for order 05,km/s,L2 RV Extension
+BCRV06,REAL,Barycentric RV for order 06,km/s,L2 RV Extension
+BCRV07,REAL,Barycentric RV for order 07,km/s,L2 RV Extension
+BCRV08,REAL,Barycentric RV for order 08,km/s,L2 RV Extension
+BCRV09,REAL,Barycentric RV for order 09,km/s,L2 RV Extension
+BCRV10,REAL,Barycentric RV for order 10,km/s,L2 RV Extension
+BCRV11,REAL,Barycentric RV for order 11,km/s,L2 RV Extension
+BCRV12,REAL,Barycentric RV for order 12,km/s,L2 RV Extension
+BCRV13,REAL,Barycentric RV for order 13,km/s,L2 RV Extension
+BCRV14,REAL,Barycentric RV for order 14,km/s,L2 RV Extension
+BCRV15,REAL,Barycentric RV for order 15,km/s,L2 RV Extension
+BCRV16,REAL,Barycentric RV for order 16,km/s,L2 RV Extension
+BCRV17,REAL,Barycentric RV for order 17,km/s,L2 RV Extension
+BCRV18,REAL,Barycentric RV for order 18,km/s,L2 RV Extension
+BCRV19,REAL,Barycentric RV for order 19,km/s,L2 RV Extension
+BCRV20,REAL,Barycentric RV for order 20,km/s,L2 RV Extension
+BCRV21,REAL,Barycentric RV for order 21,km/s,L2 RV Extension
+BCRV22,REAL,Barycentric RV for order 22,km/s,L2 RV Extension
+BCRV23,REAL,Barycentric RV for order 23,km/s,L2 RV Extension
+BCRV24,REAL,Barycentric RV for order 24,km/s,L2 RV Extension
+BCRV25,REAL,Barycentric RV for order 25,km/s,L2 RV Extension
+BCRV26,REAL,Barycentric RV for order 26,km/s,L2 RV Extension
+BCRV27,REAL,Barycentric RV for order 27,km/s,L2 RV Extension
+BCRV28,REAL,Barycentric RV for order 28,km/s,L2 RV Extension
+BCRV29,REAL,Barycentric RV for order 29,km/s,L2 RV Extension
+BCRV30,REAL,Barycentric RV for order 30,km/s,L2 RV Extension
+BCRV31,REAL,Barycentric RV for order 31,km/s,L2 RV Extension
+BCRV32,REAL,Barycentric RV for order 32,km/s,L2 RV Extension
+BCRV33,REAL,Barycentric RV for order 33,km/s,L2 RV Extension
+BCRV34,REAL,Barycentric RV for order 34,km/s,L2 RV Extension
+BCRV35,REAL,Barycentric RV for order 35,km/s,L2 RV Extension
+BCRV36,REAL,Barycentric RV for order 36,km/s,L2 RV Extension
+BCRV37,REAL,Barycentric RV for order 37,km/s,L2 RV Extension
+BCRV38,REAL,Barycentric RV for order 38,km/s,L2 RV Extension
+BCRV39,REAL,Barycentric RV for order 39,km/s,L2 RV Extension
+BCRV40,REAL,Barycentric RV for order 40,km/s,L2 RV Extension
+BCRV41,REAL,Barycentric RV for order 41,km/s,L2 RV Extension
+BCRV42,REAL,Barycentric RV for order 42,km/s,L2 RV Extension
+BCRV43,REAL,Barycentric RV for order 43,km/s,L2 RV Extension
+BCRV44,REAL,Barycentric RV for order 44,km/s,L2 RV Extension
+BCRV45,REAL,Barycentric RV for order 45,km/s,L2 RV Extension
+BCRV46,REAL,Barycentric RV for order 46,km/s,L2 RV Extension
+BCRV47,REAL,Barycentric RV for order 47,km/s,L2 RV Extension
+BCRV48,REAL,Barycentric RV for order 48,km/s,L2 RV Extension
+BCRV49,REAL,Barycentric RV for order 49,km/s,L2 RV Extension
+BCRV50,REAL,Barycentric RV for order 50,km/s,L2 RV Extension
+BCRV51,REAL,Barycentric RV for order 51,km/s,L2 RV Extension
+BCRV52,REAL,Barycentric RV for order 52,km/s,L2 RV Extension
+BCRV53,REAL,Barycentric RV for order 53,km/s,L2 RV Extension
+BCRV54,REAL,Barycentric RV for order 54,km/s,L2 RV Extension
+BCRV55,REAL,Barycentric RV for order 55,km/s,L2 RV Extension
+BCRV56,REAL,Barycentric RV for order 56,km/s,L2 RV Extension
+BCRV57,REAL,Barycentric RV for order 57,km/s,L2 RV Extension
+BCRV58,REAL,Barycentric RV for order 58,km/s,L2 RV Extension
+BCRV59,REAL,Barycentric RV for order 59,km/s,L2 RV Extension
+BCRV60,REAL,Barycentric RV for order 60,km/s,L2 RV Extension
+BCRV61,REAL,Barycentric RV for order 61,km/s,L2 RV Extension
+BCRV62,REAL,Barycentric RV for order 62,km/s,L2 RV Extension
+BCRV63,REAL,Barycentric RV for order 63,km/s,L2 RV Extension
+BCRV64,REAL,Barycentric RV for order 64,km/s,L2 RV Extension
+BCRV65,REAL,Barycentric RV for order 65,km/s,L2 RV Extension
+BCRV66,REAL,Barycentric RV for order 66,km/s,L2 RV Extension
+CCFW00,REAL,CCF weight for order 00,None,L2 RV Extension
+CCFW01,REAL,CCF weight for order 01,None,L2 RV Extension
+CCFW02,REAL,CCF weight for order 02,None,L2 RV Extension
+CCFW03,REAL,CCF weight for order 03,None,L2 RV Extension
+CCFW04,REAL,CCF weight for order 04,None,L2 RV Extension
+CCFW05,REAL,CCF weight for order 05,None,L2 RV Extension
+CCFW06,REAL,CCF weight for order 06,None,L2 RV Extension
+CCFW07,REAL,CCF weight for order 07,None,L2 RV Extension
+CCFW08,REAL,CCF weight for order 08,None,L2 RV Extension
+CCFW09,REAL,CCF weight for order 09,None,L2 RV Extension
+CCFW10,REAL,CCF weight for order 10,None,L2 RV Extension
+CCFW11,REAL,CCF weight for order 11,None,L2 RV Extension
+CCFW12,REAL,CCF weight for order 12,None,L2 RV Extension
+CCFW13,REAL,CCF weight for order 13,None,L2 RV Extension
+CCFW14,REAL,CCF weight for order 14,None,L2 RV Extension
+CCFW15,REAL,CCF weight for order 15,None,L2 RV Extension
+CCFW16,REAL,CCF weight for order 16,None,L2 RV Extension
+CCFW17,REAL,CCF weight for order 17,None,L2 RV Extension
+CCFW18,REAL,CCF weight for order 18,None,L2 RV Extension
+CCFW19,REAL,CCF weight for order 19,None,L2 RV Extension
+CCFW20,REAL,CCF weight for order 20,None,L2 RV Extension
+CCFW21,REAL,CCF weight for order 21,None,L2 RV Extension
+CCFW22,REAL,CCF weight for order 22,None,L2 RV Extension
+CCFW23,REAL,CCF weight for order 23,None,L2 RV Extension
+CCFW24,REAL,CCF weight for order 24,None,L2 RV Extension
+CCFW25,REAL,CCF weight for order 25,None,L2 RV Extension
+CCFW26,REAL,CCF weight for order 26,None,L2 RV Extension
+CCFW27,REAL,CCF weight for order 27,None,L2 RV Extension
+CCFW28,REAL,CCF weight for order 28,None,L2 RV Extension
+CCFW29,REAL,CCF weight for order 29,None,L2 RV Extension
+CCFW30,REAL,CCF weight for order 30,None,L2 RV Extension
+CCFW31,REAL,CCF weight for order 31,None,L2 RV Extension
+CCFW32,REAL,CCF weight for order 32,None,L2 RV Extension
+CCFW33,REAL,CCF weight for order 33,None,L2 RV Extension
+CCFW34,REAL,CCF weight for order 34,None,L2 RV Extension
+CCFW35,REAL,CCF weight for order 35,None,L2 RV Extension
+CCFW36,REAL,CCF weight for order 36,None,L2 RV Extension
+CCFW37,REAL,CCF weight for order 37,None,L2 RV Extension
+CCFW38,REAL,CCF weight for order 38,None,L2 RV Extension
+CCFW39,REAL,CCF weight for order 39,None,L2 RV Extension
+CCFW40,REAL,CCF weight for order 40,None,L2 RV Extension
+CCFW41,REAL,CCF weight for order 41,None,L2 RV Extension
+CCFW42,REAL,CCF weight for order 42,None,L2 RV Extension
+CCFW43,REAL,CCF weight for order 43,None,L2 RV Extension
+CCFW44,REAL,CCF weight for order 44,None,L2 RV Extension
+CCFW45,REAL,CCF weight for order 45,None,L2 RV Extension
+CCFW46,REAL,CCF weight for order 46,None,L2 RV Extension
+CCFW47,REAL,CCF weight for order 47,None,L2 RV Extension
+CCFW48,REAL,CCF weight for order 48,None,L2 RV Extension
+CCFW49,REAL,CCF weight for order 49,None,L2 RV Extension
+CCFW50,REAL,CCF weight for order 50,None,L2 RV Extension
+CCFW51,REAL,CCF weight for order 51,None,L2 RV Extension
+CCFW52,REAL,CCF weight for order 52,None,L2 RV Extension
+CCFW53,REAL,CCF weight for order 53,None,L2 RV Extension
+CCFW54,REAL,CCF weight for order 54,None,L2 RV Extension
+CCFW55,REAL,CCF weight for order 55,None,L2 RV Extension
+CCFW56,REAL,CCF weight for order 56,None,L2 RV Extension
+CCFW57,REAL,CCF weight for order 57,None,L2 RV Extension
+CCFW58,REAL,CCF weight for order 58,None,L2 RV Extension
+CCFW59,REAL,CCF weight for order 59,None,L2 RV Extension
+CCFW60,REAL,CCF weight for order 60,None,L2 RV Extension
+CCFW61,REAL,CCF weight for order 61,None,L2 RV Extension
+CCFW62,REAL,CCF weight for order 62,None,L2 RV Extension
+CCFW63,REAL,CCF weight for order 63,None,L2 RV Extension
+CCFW64,REAL,CCF weight for order 64,None,L2 RV Extension
+CCFW65,REAL,CCF weight for order 65,None,L2 RV Extension
+CCFW66,REAL,CCF weight for order 66,None,L2 RV Extension
